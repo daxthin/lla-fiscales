@@ -13,7 +13,7 @@ const InvolvedPeople = () => {
 					<h3 className="text-black font-bold text-2xl text-center">Cómo fiscalizar</h3>
 					<h1 className="text-black font-bold text-6xl text-center">Personas que intervienen</h1>
 				</div>
-				<img src="public/assets/images/hero_img_var2.png" alt="" id="hero-bg" className="absolute w-full h-full object-cover -z-10" />
+				<img src="assets/images/hero_img_var2.png" alt="" id="hero-bg" className="absolute w-full h-full object-cover -z-10" />
 			</section>
 		</header>
 		<section className="mt-32 flex flex-col items-center">
