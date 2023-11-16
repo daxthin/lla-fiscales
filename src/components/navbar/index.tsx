@@ -1,16 +1,17 @@
 import Dropdown from "../dropdown";
 import Search from "../search";
 import { paths } from "../../routes/paths";
+import { Link } from "react-router-dom"
 
 const Navbar: React.FC = () => {
     return (
         <nav className="w-full flex flex-row justify-around items-center bg-white p-4">
             <div className="flex flex-row gap-8 justify-center items-center">
                 <img src="assets/lla_logo.png" alt="" draggable={false}/>
-                <a href={paths.home} className="text-black border-b-[3px] w-[94px] text-center p-1 border-b-violet-700 font-bold text-base">Home</a>
+                <Link to={paths.home} className="text-black border-b-[3px] w-[94px] text-center p-1 border-b-violet-700 font-bold text-base">Home</Link>
                 <Dropdown name="Cómo fiscalizar">
                     <li>
-                        <a href={paths.involvedPeople} className="text-black font-semibold text-base">
+                        <a href={paths.involvedPeople}  className="text-black font-semibold text-base">
                             Personas que intervienen
                         </a>
                     </li>
