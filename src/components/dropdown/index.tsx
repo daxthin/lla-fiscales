@@ -16,7 +16,7 @@ const Dropdown: React.FC<IDropdownProps> = ({name, children}) => {
             <div className="flex flex-row justify-center items-center" onClick={()=>setIsVisible(!isVisible)}>
                 <button className="dropdown-btn font-bold">{name}</button>
                 <div className="min-w-[25px]">
-                    <img src="assets/sort-down.png" alt="" />
+                    <img src="public/assets/images/sort-down.png" alt="" />
                 </div>
             </div>
             {

@@ -7,38 +7,38 @@ const Navbar: React.FC = () => {
     return (
         <nav className="w-full flex flex-row justify-around items-center bg-white p-4">
             <div className="flex flex-row gap-8 justify-center items-center">
-                <img src="assets/lla_logo.png" alt="" draggable={false}/>
+                <img src="public/assets/images/lla_logo.png" alt="" draggable={false}/>
                 <Link to={paths.home} className="text-black border-b-[3px] w-[94px] text-center p-1 border-b-violet-700 font-bold text-base">Home</Link>
                 <Dropdown name="Cómo fiscalizar">
                     <li>
-                        <a href={paths.involvedPeople}  className="text-black font-semibold text-base">
+                        <Link to={paths.involvedPeople}  className="text-black font-semibold text-base">
                             Personas que intervienen
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href={paths.beforeVote} className="text-black font-semibold text-base">
+                        <Link to={paths.beforeVote} className="text-black font-semibold text-base">
                             El paso a paso
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href={paths.home} className="text-black font-semibold text-base">
+                        <Link to={paths.home} className="text-black font-semibold text-base">
                             El certificado de Escrutinio
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href={paths.home} className="text-black font-semibold text-base">
+                        <Link to={paths.home} className="text-black font-semibold text-base">
                             Trampas comunes
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href={paths.home} className="text-black font-semibold text-base">
+                        <Link to={paths.home} className="text-black font-semibold text-base">
                             Boletas y documentos válidos
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href={paths.home} className="text-black font-semibold text-base">
+                        <Link to={paths.home} className="text-black font-semibold text-base">
                             Cuándo, cómo y dónde denunciar
-                        </a>
+                        </Link>
                     </li>
                 </Dropdown>
             </div>

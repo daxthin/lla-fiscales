@@ -2,6 +2,7 @@ import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import { paths } from "../../routes/paths";
 import "./styles.css";
+import { Link } from "react-router-dom";
 
 const DuringVote = () => {
   return (
@@ -13,15 +14,15 @@ const DuringVote = () => {
 					<h3 className="text-black font-bold text-2xl text-center">Cómo fiscalizar</h3>
 					<h1 className="text-black font-bold text-6xl text-center">El paso a paso</h1>
 				</div>
-				<img src="assets/hero_img_var2.png" alt="" id="hero-bg" className="absolute w-full h-full object-cover -z-10" />
+				<img src="public/assets/images/hero_img_var2.png" alt="" id="hero-bg" className="absolute w-full h-full object-cover -z-10" />
 			</section>
 		</header>
         <section className="flex flex-col justify-center items-center">
             <div className="w-3/4">
                 <div className="flex flex-row justify-center w-full border-b-2 p-4 gap-4 border-black">
-                    <a href={paths.beforeVote} className="p-2 text-black rounded">Antes de la votación</a>
-                    <a href={paths.duringVote} className="bg-brand p-2 text-white rounded">Durante la votación</a>
-                    <a href={paths.afterVote} className="p-2 text-black rounded">Después de la votación</a>
+                    <Link to={paths.beforeVote} className="p-2 text-black rounded">Antes de la votación</Link>
+                    <Link to={paths.duringVote} className="bg-brand p-2 text-white rounded">Durante la votación</Link>
+                    <Link to={paths.afterVote} className="p-2 text-black rounded">Después de la votación</Link>
                 </div>
                 <div className="mt-8 flex flex-col items-start justify-center w-full">
                     <div className="flex flex-col gap-4">

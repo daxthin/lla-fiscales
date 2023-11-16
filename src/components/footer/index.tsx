@@ -4,10 +4,10 @@ const Footer = () => {
             <h2 className="text-white font-bold text-base">Fiscales La Libertad Avanza</h2>
             <div className="flex flex-row gap-4">
                 <a href="">
-                    <img src="assets/Instagram.png" alt="" />
+                    <img src="public/assets/images/Instagram.png" alt="" />
                 </a>
                 <a href="">
-                    <img src="assets/Facebook.png" alt="" />
+                    <img src="public/assets/images/Facebook.png" alt="" />
                 </a>
             </div>
         </footer>
