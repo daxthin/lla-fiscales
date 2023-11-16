@@ -2,6 +2,7 @@ import Card from "../../components/card";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import Button from "../../components/button";
+import { paths } from "../../routes/paths";
 import "./styles.css";
 
 const HomePage = () => {
@@ -32,7 +33,7 @@ const HomePage = () => {
               Si ves alguna irregularidad no dudes en denunciar
             </p>
           </div>
-          <Button isLink href="#">Quiero Denunciar</Button>
+          <Button isLink href={paths.home}>Quiero Denunciar</Button>
           <img
             src="../../public/hero_img.png"
             alt=""

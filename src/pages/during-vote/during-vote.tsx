@@ -1,5 +1,6 @@
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
+import { paths } from "../../routes/paths";
 import "./styles.css";
 
 const DuringVote = () => {
@@ -18,9 +19,9 @@ const DuringVote = () => {
         <section className="flex flex-col justify-center items-center">
             <div className="w-3/4">
                 <div className="flex flex-row justify-center w-full border-b-2 p-4 gap-4 border-black">
-                    <a href="/before-vote" className="p-2 text-black rounded">Antes de la votación</a>
-                    <a href="/during-vote" className="bg-brand p-2 text-white rounded">Durante la votación</a>
-                    <a href="/after-vote" className="p-2 text-black rounded">Después de la votación</a>
+                    <a href={paths.beforeVote} className="p-2 text-black rounded">Antes de la votación</a>
+                    <a href={paths.duringVote} className="bg-brand p-2 text-white rounded">Durante la votación</a>
+                    <a href={paths.afterVote} className="p-2 text-black rounded">Después de la votación</a>
                 </div>
                 <div className="mt-8 flex flex-col items-start justify-center w-full">
                     <div className="flex flex-col gap-4">
