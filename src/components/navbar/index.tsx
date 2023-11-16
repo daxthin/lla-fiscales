@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
     return (
         <nav className="w-full flex flex-row justify-around items-center bg-white p-4">
             <div className="flex flex-row gap-8 justify-center items-center">
-                <img src="public/assets/images/lla_logo.png" alt="" draggable={false}/>
+                <img src="assets/images/lla_logo.png" alt="" draggable={false}/>
                 <Link to={paths.home} className="text-black border-b-[3px] w-[94px] text-center p-1 border-b-violet-700 font-bold text-base">Home</Link>
                 <Dropdown name="Cómo fiscalizar">
                     <li>

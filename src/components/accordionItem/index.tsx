@@ -17,7 +17,7 @@ const AccordionItem: React.FC<IAccordionItemProps> = ({title, children}) => {
           {title}
         </h2>
         <div className="-z-20">
-          <img src="public/assets/images/expand-arrow.png" alt="" className={`${collapse ? 'rotate-180' : ''}`}/>
+          <img src="assets/images/expand-arrow.png" alt="" className={`${collapse ? 'rotate-180' : ''}`}/>
         </div>
       </div>
       <div className={`accordion-info ${collapse ? 'hidden' : ''}`}>

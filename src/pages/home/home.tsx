@@ -35,7 +35,7 @@ const HomePage = () => {
           </div>
           <Button isLink href={paths.home}>Quiero Denunciar</Button>
           <img
-            src="public/assets/images/hero_img.png"
+            src="assets/images/hero_img.png"
             alt=""
             id="hero-bg"
             className="absolute w-full h-full object-cover -z-10"
@@ -54,19 +54,19 @@ const HomePage = () => {
         <div className="flex flex-row justify-center gap-16">
           {/* You need to create a Card component that takes props like imgSrc, href, title, and description */}
           <Card
-            imgSrc="public/assets/images/Book.png"
+            imgSrc="assets/images/Book.png"
             href={paths.home}
             title="Código Electoral Nacional (C.E.N.)"
             description="Nuestra referencia principal sobre la cual se sacó toda la información"
           />
           <Card
-            imgSrc="public/assets/images/checkbook.png"
+            imgSrc="assets/images/checkbook.png"
             href={paths.home}
             title="Registro de afiliaddos"
             description="Sitio para corroborar que la autoridad de mesa no esté afiliada a ningún partido político"
           />
           <Card
-            imgSrc="public/assets/images/Study.png"
+            imgSrc="assets/images/Study.png"
             href={paths.home}
             title="Cámara Nacional Electoral (CNE)"
             description="Información de la Cámara Nacional Electoral con sus distintas resoluciones acordadas"
@@ -75,7 +75,7 @@ const HomePage = () => {
         <div className="flex flex-col justify-center items-center mt-44 mb-44">
           <div className="flex flex-row md:w-1/2 gap-7 pt-10 pb-10 pl-8 pr-8 bg-[#FFF4F4] border-l-[6px] border-l-[#D64B4B] rounded-lg">
             <div className="flex flex-col w-20 h-auto">
-              <img src="public/assets/images/alert-icon.svg" alt="" />
+              <img src="assets/images/alert-icon.svg" alt="" />
             </div>
             <div className="flex flex-col">
               <span className="text-[#FF0000] font-bold mb-2 text-lg">

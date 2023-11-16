@@ -15,7 +15,7 @@ const BeforeVote = () => {
 					<h3 className="text-black font-bold text-2xl text-center">Cómo fiscalizar</h3>
 					<h1 className="text-black font-bold text-6xl text-center">El paso a paso</h1>
 				</div>
-				<img src="public/assets/images/hero_img_var2.png" alt="" id="hero-bg" className="absolute w-full h-full object-cover -z-10" />
+				<img src="assets/images/hero_img_var2.png" alt="" id="hero-bg" className="absolute w-full h-full object-cover -z-10" />
 			</section>
 		</header>
         <section className="flex flex-col justify-center items-center">
@@ -74,7 +74,7 @@ const BeforeVote = () => {
                             </p>
                         </div>
                         <div className="border-b flex gap-20 flex-row border-black pl-40 pr-40 pb-8 pt-8 justify-start items-center">
-                            <img src="public/assets/resources/foto21.png" alt="" />
+                            <img src="assets/resources/foto21.png" alt="" />
                             <div>
                                 <h3 className="font-normal text-2xl">Solicitar copia de padrón</h3>
                                 <p>
@@ -83,7 +83,7 @@ const BeforeVote = () => {
                             </div>
                         </div>
                         <div className="border-b flex gap-20 flex-row border-black pl-40 pr-40 pb-8 pt-8 justify-start items-center">
-                            <img src="public/assets/resources/foto31.png" alt="" />
+                            <img src="assets/resources/foto31.png" alt="" />
                             <div>
                                 <h3 className="font-normal text-2xl">Cuarto oscuro</h3>
                                 <p>
@@ -92,7 +92,7 @@ const BeforeVote = () => {
                             </div>
                         </div>
                         <div className="border-b flex gap-20 flex-row border-black pl-40 pr-40 pb-8 pt-8 justify-start items-center">
-                            <img src="public/assets/resources/foto41.png" alt="" />
+                            <img src="assets/resources/foto41.png" alt="" />
                             <div>
                                 <h3 className="font-normal text-2xl">Habilitación</h3>
                                 <p>
@@ -101,7 +101,7 @@ const BeforeVote = () => {
                             </div>
                         </div>
                         <div className="border-b flex gap-20 flex-row border-black pl-40 pr-40 pb-8 pt-8 justify-start items-center">
-                            <img src="public/assets/resources/foto161.png" alt="" />
+                            <img src="assets/resources/foto161.png" alt="" />
                             <div>
                                 <h3 className="font-normal text-2xl">Verificar que las boletas SEAN LAS OFICIALES</h3>
                                 <p>
@@ -110,7 +110,7 @@ const BeforeVote = () => {
                             </div>
                         </div>
                         <div className="border-b flex gap-20 flex-row border-black pl-40 pr-40 pb-8 pt-8 justify-start items-center">
-                            <img src="public/assets/resources/foto51.png" alt="" />
+                            <img src="assets/resources/foto51.png" alt="" />
                             <div>
                                 <h3 className="font-normal text-2xl">Cuarto oscuro accesible</h3>
                                 <p>
@@ -119,7 +119,7 @@ const BeforeVote = () => {
                             </div>
                         </div>
                         <div className="border-b flex gap-20 flex-row border-black pl-40 pr-40 pb-8 pt-8 justify-start items-center">
-                            <img src="public/assets/resources/foto61.png" alt="" />
+                            <img src="assets/resources/foto61.png" alt="" />
                             <div>
                                 <h3 className="font-normal text-2xl">Habilitación de la urna de votación</h3>
                                 <p>
