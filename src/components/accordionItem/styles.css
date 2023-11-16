@@ -1,0 +1,9 @@
+.collapse {
+    height: 0;
+    transition: 250ms ease-in-out;
+}
+
+.expand {
+    height: 300px;
+    transition: 250ms ease-in-out;
+}
