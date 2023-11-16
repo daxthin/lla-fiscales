@@ -1,5 +1,5 @@
 export const paths = {
-  home: '/home',
+  home: '/',
   involvedPeople: '/involved-people',
   beforeVote: '/before-vote',
   duringVote: '/during-vote',
