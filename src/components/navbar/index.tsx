@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to={paths.home} className="text-black font-semibold text-base">
+                        <Link to={paths.certDeEscrutinio} className="text-black font-semibold text-base">
                             El certificado de Escrutinio
                         </Link>
                     </li>

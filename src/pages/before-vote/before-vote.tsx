@@ -19,7 +19,7 @@ const BeforeVote = () => {
 			</section>
 		</header>
         <section className="flex flex-col justify-center items-center">
-            <div className="w-3/4">
+            <div className="w-[980px]">
                 <div className="flex flex-row justify-center w-full border-b-2 p-4 gap-4 border-black">
                     <Link to={paths.beforeVote} className="bg-brand p-2 text-white rounded">Antes de la votación</Link>
                     <Link to={paths.duringVote} className="p-2 text-black rounded">Durante la votación</Link>
@@ -30,7 +30,7 @@ const BeforeVote = () => {
                         <h2 className="font-bold text-[1.9rem]">Antes de la votación</h2>
                         <p>Te recomendamos algunos de los siguientes pasos a tener en cuenta antes del proceso de votación y llegada al colegio.</p>
                     </div>
-                    <ExpandableCard>
+                    <ExpandableCard title="" subtitle="" imgSrc="">
                         <div className="border-b border-black pl-40 pr-40 pb-8 pt-8 justify-center items-center">
                             <h3 className="font-normal text-2xl">Primer contacto con los fiscales</h3>
                             <p>

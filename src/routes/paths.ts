@@ -3,5 +3,6 @@ export const paths = {
   involvedPeople: '/involved-people',
   beforeVote: '/before-vote',
   duringVote: '/during-vote',
-  afterVote: '/after-vote'
+  afterVote: '/after-vote',
+  certDeEscrutinio: '/certificado-de-escrutinio'
 };

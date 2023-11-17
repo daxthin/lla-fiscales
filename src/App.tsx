@@ -6,6 +6,7 @@ import AfterVote from "./pages/after-vote/after-vote";
 import InvolvedPeople from "./pages/involved-people/involved-people";
 import HomePage from "./pages/home/home";
 import { paths } from "./routes/paths";
+import CertificadoDeEscrutinio from "./pages/certificado-de-escrutinio/certificado-de-escrutinio";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path={paths.beforeVote} Component={BeforeVote} />
           <Route path={paths.duringVote} Component={DuringVote} />
           <Route path={paths.afterVote} Component={AfterVote} />
+          <Route path={paths.certDeEscrutinio} Component={CertificadoDeEscrutinio} />
         </Routes>
       </HashRouter>
     </>
