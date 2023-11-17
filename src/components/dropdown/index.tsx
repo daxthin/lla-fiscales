@@ -20,7 +20,7 @@ const Dropdown: React.FC<IDropdownProps> = ({name, children}) => {
                 </div>
             </div>
             {
-                <div className={`dropdown-list transition-opacity duration-200 ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'} bg-white absolute rounded-[10px] p-4 mt-4 z-10`}>
+                <div className={`dropdown-list transition-opacity w-full md:w-auto left-0 md:left-auto duration-200 ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'} bg-white absolute rounded-[10px] p-4 mt-4 z-10`}>
                     <ul className="flex flex-col gap-1">
                         {children}
                     </ul>

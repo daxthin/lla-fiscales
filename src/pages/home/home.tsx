@@ -18,11 +18,11 @@ const HomePage = () => {
             <h3 className="text-black font-bold text-2xl text-center">
               Fiscales
             </h3>
-            <h1 className="text-black font-bold text-6xl text-center">
+            <h1 className="text-black font-bold text-4xl md:text-6xl text-center">
               La libertad avanza
             </h1>
-            <div className="m-auto mt-4 mb-4 sm:w-[600px] md:w-[960px]">
-              <p className="text-black font-medium text-2xl text-center">
+            <div className="m-auto mt-4 mb-4 w-[350px] md:w-[960px]">
+              <p className="text-black font-medium md:text-2xl text-center">
                 Bienvenidos a la página de Fiscales de La Libertad Avanza. En
                 nuestra página ofrecemos toda información para fiscales
                 generales y de mesa para el próximo comicio del 19 de Noviembre
@@ -45,13 +45,13 @@ const HomePage = () => {
       <section id="important-info">
         <div className="flex flex-col justify-between items-center gap-10 mt-28 mb-28">
           <h3 className="text-black font-bold text-2xl">Qué necesitas saber</h3>
-          <h1 className="text-black font-bold text-5xl">Datos importantes</h1>
-          <p className="text-black font-normal text-lg">
+          <h1 className="text-black font-bold text-4xl md:text-5xl text-center">Datos importantes</h1>
+          <p className="text-black font-normal text-lg text-center">
             En los distintos enlaces encontrará toda la información disponible
             sobre este tema.
           </p>
         </div>
-        <div className="flex flex-row justify-center gap-16">
+        <div className="flex flex-row justify-center gap-16 flex-wrap">
           {/* You need to create a Card component that takes props like imgSrc, href, title, and description */}
           <Card
             imgSrc="assets/images/Book.png"
@@ -73,7 +73,7 @@ const HomePage = () => {
           />
         </div>
         <div className="flex flex-col justify-center items-center mt-44 mb-44">
-          <div className="flex flex-row md:w-1/2 gap-7 pt-10 pb-10 pl-8 pr-8 bg-[#FFF4F4] border-l-[6px] border-l-[#D64B4B] rounded-lg">
+          <div className="flex flex-row w-[380px] md:w-1/2 gap-7 pt-10 pb-10 pl-8 pr-8 bg-[#FFF4F4] border-l-[6px] border-l-[#D64B4B] rounded-lg">
             <div className="flex flex-col w-20 h-auto">
               <img src="assets/images/alert-icon.svg" alt="" />
             </div>

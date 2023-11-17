@@ -1,6 +1,6 @@
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
-import AccordionItem from "../../components/accordionItem";
+import ExpandableItem from "../../components/expandable-item";
 import "./styles.css";
 
 const InvolvedPeople = () => {
@@ -18,7 +18,7 @@ const InvolvedPeople = () => {
 		</header>
 		<section className="mt-32 flex flex-col items-center">
 			<div className="flex flex-col w-1/2">
-				<AccordionItem title="Autoridades de mesa">
+				<ExpandableItem title="Autoridades de mesa">
 					<p>
 						Son ciudadanos/as elegidos/as aleatoriamente por la Justicia Nacional Electoral. Deben ser electores/as hábiles y votar en la mesa en que actúan, tener entre 18 y 70 años y saber leer y escribir. Por cada mesa de votación hay dos autoridades: El/la Presidente y el/la suplente quien auxilia al primero. Si falta el presidente queda el suplente solo. Art. 72 y 73 C.E.N.
 						Las autoridades de mesa no pueden estar afiliadas a ningún partido. Verificar que la autoridad no se encuentre incluida en esto en el padrón de afiliados de la C.N.E. (según acordada extraordinaria 129/08)
@@ -35,21 +35,26 @@ const InvolvedPeople = () => {
 						<br />
 						🚨 Comentario: Si el presidente (sobretodo) o suplente son personas responsables e imparciales hay mucha garantía de un comicio limpio. Si son simpatizantes partidarios PODRÍA suceder de que avalen o participen en alguna irregularidad. Cambiar datos, cambiar votos, permitir votos nulos o anular votos válidos. EL FISCAL DEBE ESTAR MUY ATENTO A ESTOS COMPORTAMIENTOS.
 					</p>
-				</AccordionItem>
-				<AccordionItem title="Comando General Electoral">
+				</ExpandableItem>
+				<ExpandableItem title="Comando General Electoral">
 					<div className="flex flex-row items-center justify-center gap-4">
 						<p>
 							Fuerzas armadas o de seguridad que custodian la escuela donde se realiza el comicio. Su tarea es velar por la seguridad de las urnas y autoridades, evitar alteraciones del orden en el establecimiento. Gendarmería estará a cargo de la custodia de las urnas. Fuerzas de seguridad a cargo de la seguridad de las alteraciones del orden en el establecimiento.
 						</p>
 						<img src="assets/images/foto11.png" alt=""/>
 					</div>
-				</AccordionItem>
-				<AccordionItem title="Delegado de la junta electoral">
-					<p>
-						Es el representante de la Junta Electoral (organismo máximo judicial) en el establecimiento. Es el nexo presente en la escuela y la Junta Electoral. Esta persona deberá decidir sobre aquella cuestión que suceda antes, durante o después del comicio y deba tomarse una decisión al respecto. Esta persona es MUY IMPORTANTE como referencia, consultas y para hacer denuncias. Esta persona deberá identificarse a través de una designación de la Junta Electoral con nombre, apellido y número DNI. Identificar a esta persona apenas uno llega a la escuela es una de las primeras cosas que debe hacer un fiscal. Foto1
-					</p>
-				</AccordionItem>
-				<AccordionItem title="Fiscales">
+				</ExpandableItem>
+				<ExpandableItem title="Delegado de la junta electoral">
+					<div className="grid grid-cols-[auto_20em] grid-rows-1">
+						<p>
+							Es el representante de la Junta Electoral (organismo máximo judicial) en el establecimiento. Es el nexo presente en la escuela y la Junta Electoral. Esta persona deberá decidir sobre aquella cuestión que suceda antes, durante o después del comicio y deba tomarse una decisión al respecto. Esta persona es MUY IMPORTANTE como referencia, consultas y para hacer denuncias. Esta persona deberá identificarse a través de una designación de la Junta Electoral con nombre, apellido y número DNI. Identificar a esta persona apenas uno llega a la escuela es una de las primeras cosas que debe hacer un fiscal. Foto1
+						</p>
+						<div className="place-self-center w-[250px]">
+							<img className="w-full h-auto" src="assets/resources/foto11.png" alt="" />
+						</div>
+					</div>
+				</ExpandableItem>
+				<ExpandableItem title="Fiscales">
 					<p>
 						Los/as fiscales representan a los partidos políticos ante cada mesa electoral. Hay distintos tipos de fiscales: de mesa, generales y tecnológicos.
 						<br />
@@ -96,7 +101,7 @@ const InvolvedPeople = () => {
 							En las elecciones primarias se utilizará el mismo padrón que en las elecciones generales, en el que constarán las personas que cumplan 16 años hasta el día de la elección general. Art. 23 C.E.N.
 						</p>
 					</div>
-				</AccordionItem>
+				</ExpandableItem>
 			</div>
 		</section>
 		<Footer></Footer>

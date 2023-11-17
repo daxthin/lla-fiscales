@@ -3,7 +3,7 @@ import './styles.css';
 
 const Card: React.FC<ICardProps> = ({title, description, href, imgSrc}) => {
     return (
-        <div className="Card flex flex-col justify-evenly items-center rounded-[20px] gap-6 shadow-md p-10 md:w-[350px]">
+        <div className="Card flex flex-col justify-evenly items-center rounded-[20px] gap-6 shadow-md p-10 w-[330px] md:w-[350px]">
             <div>
                 <img src={imgSrc} alt="" />
             </div>

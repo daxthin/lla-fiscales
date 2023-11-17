@@ -3,6 +3,6 @@ export interface IButtonProps {
     isLink?: boolean;
     href?: string;
     className?: string;
-    children?: string;
+    children?: React.ReactNode;
     cb?: ()=> void;
 }

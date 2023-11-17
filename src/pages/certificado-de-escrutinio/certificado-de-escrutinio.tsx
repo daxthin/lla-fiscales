@@ -1,9 +1,8 @@
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
-import ExpandableCard from "../../components/expandable-card";
-import { paths } from "../../routes/paths";
 import "./styles.css";
-import { Link } from "react-router-dom";
+import CardVariantTwo from "../../components/card-type-two";
+import AlertCard from "../../components/alert-card";
 
 const CertificadoDeEscrutinio = () => {
   return (
@@ -22,110 +21,116 @@ const CertificadoDeEscrutinio = () => {
             <div className="w-[980px] mt-16 flex flex-col gap-10">
                 <h1 className="font-bold text-[1.9rem]">La importancia del certificado de escrutinio</h1>
 
-                <div className="flex flex-col justify-center items-center mt-10">
-                    <div className="flex flex-row gap-7 pt-10 pb-10 pl-8 pr-8 bg-[#FFF4F4] border-l-[6px] border-l-[#D64B4B] rounded-lg">
-                        <div className="flex flex-col w-20 h-auto">
-                            <img src="assets/images/alert-icon.svg" alt="" />
-                        </div>
-                        <div className="flex flex-col">
-                            <span className="text-[#FF0000] font-bold mb-2 text-lg">
-                                Aviso importante
-                            </span>
-                            <p className="font-semibold">
-                                Cualquier variación escrita entre esta página y las referencias
-                                oficiales del Código Electoral Nacional (C.N.E)/ Cámara Nacional
-                                Electoral (C.N.E). Siempre es válidos las referencias oficiales
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <AlertCard message={"El CERTIFICADO DE ESCRUTINIO es nuestro COMPROBANTE CONTRA EL FRAUDE. Si nos vamos sin ese documento todo lo hecho durante el día será en vano."}></AlertCard>
 
-                <div className="bg-[#E9E9E9] rounded-2xl flex flex-col shadow-md">
-                    <div className="p-8 w-full flex flex-row justify-center items-center">
-                        <img src="assets/resources/foto390.png" alt="" />
-                    </div>
-                    <div className="w-full bg-white pb-16 pl-8 pr-8 pt-6 rounded-b-2xl">
-                        <div className="flex flex-row items-center gap-2">
-                            <div>
-                                <img src="assets/images/askq.png" alt="" />
-                            </div>
-                            <h3 className="font-bold text-2xl">¿Que pasa luego de realizarse el acta de escrutinio?</h3>
-                        </div>
-                        <p className="mt-8">Luego de realizarse el ACTA DE ESCRUTINIO el presidente de mesa hará el CERTIFICADO DE ESCRUTINIO original, este documento irá dentro de la urna.</p>
-                    </div>
-                </div>
+                <CardVariantTwo 
+                    title={"¿Que pasa luego de realizarse el acta de escrutinio?"}
+                    description={"Luego de realizarse el ACTA DE ESCRUTINIO el presidente de mesa hará el CERTIFICADO DE ESCRUTINIO original, este documento irá dentro de la urna."}
+                    imgSrc={"assets/resources/foto390.png"}
+                />
 
-                <div className="bg-[#E9E9E9] rounded-2xl flex flex-col shadow-md">
-                    <div className="p-8 w-full flex flex-row justify-center items-center">
-                        <img src="assets/resources/foto390.png" alt="" />
-                    </div>
-                    <div className="w-full bg-white pb-16 pl-8 pr-8 pt-6 rounded-b-2xl">
-                        <div className="flex flex-row items-center gap-2">
-                            <div>
-                                <img src="assets/images/askq.png" alt="" />
-                            </div>
-                            <h3 className="font-bold text-2xl">¿Que pasa luego de realizarse el acta de escrutinio?</h3>
-                        </div>
-                        <p className="mt-8">Luego de realizarse el ACTA DE ESCRUTINIO el presidente de mesa hará el CERTIFICADO DE ESCRUTINIO original, este documento irá dentro de la urna.</p>
-                    </div>
-                </div>
+                <CardVariantTwo 
+                    title={"¿Qué más adicional debe de pedir el fiscal?"}
+                    description={"Adicionalmente EL FISCAL DEBE PEDIR UNA COPIA DEL CERTIFICADO DE ESCRUTINIO. Por el Art. 102 del C.E.N. el presidente está obligado a dar una copia de este documento al fiscal que lo solicite y los demás integrantes de la mesa (auxiliar y fiscales) están obligados a firmar dicha copia. En caso de que alguien se negara a firmar dicha copia el fiscal debe realizar un ACTA ante el representante de la Junta Electoral"}
+                    imgSrc={"assets/resources/image999.png"}
+                />
 
-                <div className="bg-[#E9E9E9] rounded-2xl flex flex-col shadow-md">
-                    <div className="p-8 w-full flex flex-row justify-center items-center">
-                        <img src="assets/resources/foto390.png" alt="" />
-                    </div>
-                    <div className="w-full bg-white pb-16 pl-8 pr-8 pt-6 rounded-b-2xl">
-                        <div className="flex flex-row items-center gap-2">
-                            <div>
-                                <img src="assets/images/askq.png" alt="" />
-                            </div>
-                            <h3 className="font-bold text-2xl">¿Que pasa luego de realizarse el acta de escrutinio?</h3>
-                        </div>
-                        <p className="mt-8">Luego de realizarse el ACTA DE ESCRUTINIO el presidente de mesa hará el CERTIFICADO DE ESCRUTINIO original, este documento irá dentro de la urna.</p>
-                    </div>
-                </div>
+                <CardVariantTwo 
+                    title={"¿Qué pasa luego de haber firmado toda la documentación?"}
+                    description={`
+                        Una vez firmada la documentación el presidente de mesa preparará la devolución de toda la mesa de la siguiente manera: 
 
-                <div className="bg-[#E9E9E9] rounded-2xl flex flex-col shadow-md">
-                    <div className="p-8 w-full flex flex-row justify-center items-center">
-                        <img src="assets/resources/foto390.png" alt="" />
-                    </div>
-                    <div className="w-full bg-white pb-16 pl-8 pr-8 pt-6 rounded-b-2xl">
-                        <div className="flex flex-row items-center gap-2">
-                            <div>
-                                <img src="assets/images/askq.png" alt="" />
-                            </div>
-                            <h3 className="font-bold text-2xl">¿Que pasa luego de realizarse el acta de escrutinio?</h3>
-                        </div>
-                        <p className="mt-8">Luego de realizarse el ACTA DE ESCRUTINIO el presidente de mesa hará el CERTIFICADO DE ESCRUTINIO original, este documento irá dentro de la urna.</p>
-                    </div>
-                </div>
+                        Todo la documentación y urna preparada como establece el punto anterior se entrega al personal del Correo Argentino.
+                    `}
+                    imgSrc={"assets/resources/image333.png"}
+                />
 
-                <div className="flex flex-col justify-center items-center mt-10">
-                    <div className="flex flex-row gap-7 pt-10 pb-10 pl-8 pr-8 bg-[#FFF4F4] border-l-[6px] border-l-[#D64B4B] rounded-lg">
-                        <div className="flex flex-col w-20 h-auto">
-                            <img src="assets/images/alert-icon.svg" alt="" />
-                        </div>
-                        <div className="flex flex-col">
-                            <span className="text-[#FF0000] font-bold mb-2 text-lg">
-                                Aviso importante
-                            </span>
-                            <p className="font-semibold">
-                                si se reemplazo el fiscal debe haber dejado constancia en el acta complementaria a los efectos de que el certificado de escrutinio no sea cuestionado.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <CardVariantTwo 
+                    title={"¿Hay algún otro documento que debe de completar el presidente de mesa?"}
+                    description={`
+                        Otro documento que completa el presidente es el TELEGRAMA que será entregado al correo para que se transmitan los datos. SI ES POSIBLE, CON DISCRECIÓN, SERÍA BUENO QUE EL FISCAL PUDIERA TOMAR FOTO DEL TELEGRAMA.
+                    `}
+                    imgSrc={"assets/resources/image444.png"}
+                />
+
+                <AlertCard message={"Si se reemplazo el fiscal debe haber dejado constancia en el acta complementaria a los efectos de que el certificado de escrutinio no sea cuestionado."}></AlertCard>
 
                 <h1 className="font-bold text-[1.9rem]">La importancia del certificado de escrutinio</h1>
                 <p>En ese momento termina para el fiscal su día de votación entregándole al fiscal general el CERTIFICADO DE ESCRUTINIO</p>
-                <h1 className="font-bold text-[1.9rem]">Frases para dejar asentadas las observaciones en el acta de apertura, complementarias y/o cierre de escrutinio</h1>
+                <h1 className="font-bold text-xl">Frases para dejar asentadas las observaciones en el acta de apertura, complementarias y/o cierre de escrutinio</h1>
 
-                <div className="flex flex-col gap-20 bg-[#F9FAFB] p-8 rounded-2xl">
-                    <div className="flex flex-row justify-center items-center">
-                        <p>AFILIADO DESIGNADO COMO AUTORIDAD DE MESA:</p>
-                        <p>“Se ha observado la actuación del Sr. …… DNI …… como Autoridad de Mesa, que aparece como afiliado a un partido político en el Registro de Afiliados de la C.N.E., violando la Acordada Extraordinaria 129/08 de la C.N.E. y jurisprudencia del fuero electoral.”</p>
+                <div className="flex flex-col bg-[#F9FAFB] p-8 rounded-2xl shadow-md">
+                    <div className="grid grid-rows-1 grid-cols-[15em_auto] gap-8">
+                        <p>AFILIADO DESIGNADO COMO AUTORIDAD DE MESA</p>
+                        <p>
+                            “Se ha observado la actuación del Sr. …… DNI …… como Autoridad de Mesa, que aparece como afiliado a un partido político en el Registro de Afiliados de la C.N.E., violando la Acordada Extraordinaria 129/08 de la C.N.E. y jurisprudencia del fuero electoral.”
+                        </p>
                     </div>
                 </div>
+
+                <div className="flex flex-col bg-[#F9FAFB] p-8 rounded-2xl shadow-md">
+                    <div className="grid grid-rows-1 grid-cols-[15em_auto] gap-8">
+                        <p>FISCAL DESIGNADO COMO AUTORIDAD DE MESA</p>
+                        <p>
+                            “Se ha observado la actuación de quien se presentará como fiscal por el Partido/Alianza…como Autoridad de Mesa, violando la Acordada Extraordinaria 129/08 de la C.N.E. y jurisprudencia del fuero electoral.” Nota: identificarlo con nombre completo y DNI.
+                        </p>
+                    </div>
+                </div>
+
+                <div className="flex flex-col bg-[#F9FAFB] p-8 rounded-2xl shadow-md">
+                    <div className="grid grid-rows-1 grid-cols-[15em_auto] gap-8">
+                        <p>AUTORIDAD DE MESA ESTÁ DEJANDO VOTAR CON EJEMPLAR DE DNI ANTERIOR AL QUE FIGURA EN EL PADRÓN</p>
+                        <p>
+                            “Se ha observado la actuación de quien se presentará como fiscal por el Partido/Alianza…como Autoridad de Mesa, violando la Acordada Extraordinaria 129/08 de la C.N.E. y jurisprudencia del fuero electoral.” Nota: identificarlo con nombre completo y DNI.
+                        </p>
+                    </div>
+                </div>
+
+                <div className="flex flex-col bg-[#F9FAFB] p-8 rounded-2xl shadow-md">
+                    <div className="grid grid-rows-1 grid-cols-[15em_auto] gap-8">
+                        <p>AUTORIDAD DE MESA AGREGA A MANO GENTE AL PADRÓN</p>
+                        <p>
+                            Se deja constancia que la autoridad de mesa está violando el Art. 86, inc. 3 a y b C.E.N. que dice “3. No le será admitido el voto: a) Si el elector exhibiere un documento cívico anterior al que consta en el padrón”.
+                        </p>
+                    </div>
+                </div>
+
+                <div className="flex flex-col bg-[#F9FAFB] p-8 rounded-2xl shadow-md">
+                    <div className="grid grid-rows-1 grid-cols-[15em_auto] gap-8">
+                        <p>DELEGADO IMPIDE ACTUACIÓN Y/O SE ARROGA FACULTADES FRENTE AL FISCAL O LA AUTORIDAD DE MESA</p>
+                        <p>
+                            Se deja constancia que la autoridad de mesa está agregando gente al padrón en violación del Art. 86 que dice: Los electores podrán votar únicamente en la mesa receptora de votos en cuya lista figuren asentados y con el documento cívico habilitante. El presidente verificará si el elector a quien pertenece el documento cívico figura en el padrón electoral de la mesa”
+                            Caso 2: el delegado y/o comando electoral le dice a la autoridad de mesa que los agregue a ellos o a otra persona al padrón. Dejo constancia que se está violando el Art. 87 que establece: “Ninguna autoridad, ni aun el juez federal con competencia electoral, podrá ordenar al presidente de mesa que admita el voto de un elector que no figura inscripto en los ejemplares del padrón electoral”.
+                        </p>
+                    </div>
+                </div>
+
+                <div className="flex flex-col bg-[#F9FAFB] p-8 rounded-2xl shadow-md">
+                    <div className="grid grid-rows-1 grid-cols-[15em_auto] gap-8">
+                        <p>NO ME PERMITEN IMPUGNAR LA IDENTIDAD DEL ELECTOR</p>
+                        <p>
+                            Dejar asentado en el acta complementaria: Dejo constancia que el Delegado de la Justicia Electoral interfería con el normal desarrollo del comicio impidiendo… u ordenando … (relatar hechos)
+                        </p>
+                    </div>
+                </div>
+
+                <div className="flex flex-col bg-[#F9FAFB] p-8 rounded-2xl shadow-md">
+                    <div className="grid grid-rows-1 grid-cols-[15em_auto] gap-8">
+                        <p>NO ME PERMITEN RECURRIR UN VOTO</p>
+                        <p>
+                            Dejo constancia que la autoridad de mesa no me deja impugnar la identidad del elector, violando el Art. 89 C.E.N. que autoriza la verificación de la identidad del elector y el Art. 91 C.E.N. que establece que los fiscales “tienen derecho a impugnar el voto del compareciente cuando a su juicio hubiere falseado su identidad.”
+                        </p>
+                    </div>
+                </div>
+
+                <div className="flex flex-col bg-[#F9FAFB] p-8 rounded-2xl shadow-md">
+                    <div className="grid grid-rows-1 grid-cols-[15em_auto] gap-8">
+                        <p>FALTA DE FIRMAS Y TROQUELES EN EL PADRON</p>
+                        <p>
+                            “Se ha observado que faltan .. troqueles o constancias de emisión de voto, sin que conste la firma del elector en el padrón electoral” (Art. 139 inc. i, C.E.N.)
+                        </p>
+                    </div>
+                </div>                
 
             </div>
         </section>

@@ -1,6 +1,6 @@
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
-import ExpandableCard from "../../components/expandable-card";
+import {ExpandableCard, ExpandableCardItem} from "../../components/expandable-card";
 import { paths } from "../../routes/paths";
 import "./styles.css";
 import { Link } from "react-router-dom";
@@ -30,109 +30,85 @@ const BeforeVote = () => {
                         <h2 className="font-bold text-[1.9rem]">Antes de la votación</h2>
                         <p>Te recomendamos algunos de los siguientes pasos a tener en cuenta antes del proceso de votación y llegada al colegio.</p>
                     </div>
-                    <ExpandableCard title="" subtitle="" imgSrc="">
-                        <div className="border-b border-black pl-40 pr-40 pb-8 pt-8 justify-center items-center">
-                            <h3 className="font-normal text-2xl">Primer contacto con los fiscales</h3>
-                            <p>
-                                Tomar contacto antes de la elección, de ser posible, con el/los fiscal/es general/es para coordinar previamente. O en su defecto tener contacto con el coordinador de fiscales de la zona.
-                            </p>
-                        </div>
-                        <div className="border-b border-black pl-40 pr-40 pb-8 pt-8 justify-center items-center">
-                            <h3 className="font-normal text-2xl">Planilla de control de votantes</h3>
-                            <p>
-                                Llevar Planilla de Control de Votantes  (ver en documentos útiles).
-                            </p>
-                        </div>
-                        <div className="border-b border-black pl-40 pr-40 pb-8 pt-8 justify-center items-center">
-                            <h3 className="font-normal text-2xl">Verificar la presencia de AFICHES PARTIDOS</h3>
-                            <p>
-                                Verificar que en la entrada o en el interior de la escuela o en el interior del aula que oficia de mesa NO HAYA afiches partidarios o de propaganda política o cualquier cosa que pueda inducir el voto (imágenes de Perón o Evita por ejemplo). Se deberá comunicar al Delegado de la Junta Electoral para que esta propaganda sea removida.
-                            </p>
-                        </div>
-                        <div className="border-b border-black pl-40 pr-40 pb-8 pt-8 justify-center items-center">
-                            <h3 className="font-normal text-2xl">Llevar DNI y celular</h3>
-                            <p>
-                                Llevar DNI y llevar cargador de teléfono.
-                            </p>
-                        </div>
-                        <div className="border-b border-black pl-40 pr-40 pb-8 pt-8 justify-center items-center">
-                            <h3 className="font-normal text-2xl">Llegar temprano : antes de la 7 am</h3>
-                            <p>
-                                Llegar temprano a la escuela. Se recomienda llegar a las 7 am para tener tiempo de identificar participantes, lugares, etc.
-                            </p>
-                        </div>
-                        <div className="border-b border-black pl-40 pr-40 pb-8 pt-8 justify-center items-center">
-                            <h3 className="font-normal text-2xl">Identificar al fiscal general del partido</h3>
-                            <p>
-                                Identificar fiscal general del partido quien entregará el poder emitido por LLA para el fiscal de mesa que deberá ser presentado ante las autoridades de mesa.                           
-                            </p>
-                        </div>
-                        <div className="border-b border-black pl-40 pr-40 pb-8 pt-8 justify-center items-center">
-                            <h3 className="font-normal text-2xl">Tomar buena ubicación de la silla</h3>
-                            <p>
-                                De ser posible, si no está el auxiliar del presidente, tomar ubicación en la silla al lado del presidente de mesa para poder ir siguiendo el control de documentos de los votantes.                        
-                            </p>
-                        </div>
-                        <div className="border-b flex gap-20 flex-row border-black pl-40 pr-40 pb-8 pt-8 justify-start items-center">
-                            <img src="assets/resources/foto21.png" alt="" />
-                            <div>
-                                <h3 className="font-normal text-2xl">Solicitar copia de padrón</h3>
-                                <p>
-                                    Solicitar a la autoridad de mesa la copia del padrón. ¿Qué pasa si la autoridad de mesa no tiene copia del padrón para el fiscal LLA? Solución a ese problema: Sacar fotos al PADRÓN DE PARED de la mesa asignada (este afiche viene con la urna y elementos). El fiscal sacará varias fotos de ese padrón para poder tener la información de votantes de la mesa e irá anotando en un papel el nro de orden que votó llevando conjuntamente con la planilla control de votantes. (foto 2)                            
-                                </p>
-                            </div>
-                        </div>
-                        <div className="border-b flex gap-20 flex-row border-black pl-40 pr-40 pb-8 pt-8 justify-start items-center">
-                            <img src="assets/resources/foto31.png" alt="" />
-                            <div>
-                                <h3 className="font-normal text-2xl">Cuarto oscuro</h3>
-                                <p>
-                                    Preparación del cuarto oscuro
-                                </p>
-                            </div>
-                        </div>
-                        <div className="border-b flex gap-20 flex-row border-black pl-40 pr-40 pb-8 pt-8 justify-start items-center">
-                            <img src="assets/resources/foto41.png" alt="" />
-                            <div>
-                                <h3 className="font-normal text-2xl">Habilitación</h3>
-                                <p>
-                                    Habilitación del cuarto oscuro 
-                                </p>
-                            </div>
-                        </div>
-                        <div className="border-b flex gap-20 flex-row border-black pl-40 pr-40 pb-8 pt-8 justify-start items-center">
-                            <img src="assets/resources/foto161.png" alt="" />
-                            <div>
-                                <h3 className="font-normal text-2xl">Verificar que las boletas SEAN LAS OFICIALES</h3>
-                                <p>
-                                    Verificar siempre que sean todas boletas oficializadas. Fecha 19 Noviembre 2023 y Fecha 22 Octubre 2023 Exp 7574-2023 31-oct-2023 link a Exp 7574-2023 31-oct-2023.pdf (autorización Justicia Nacional Electoral sobre uso de boletas) 
-                                </p>
-                            </div>
-                        </div>
-                        <div className="border-b flex gap-20 flex-row border-black pl-40 pr-40 pb-8 pt-8 justify-start items-center">
-                            <img src="assets/resources/foto51.png" alt="" />
-                            <div>
-                                <h3 className="font-normal text-2xl">Cuarto oscuro accesible</h3>
-                                <p>
-                                    Verificar siempre que sean todas boletas oficializadas. Fecha 19 Noviembre 2023 y Fecha 22 Octubre 2023 Exp 7574-2023 31-oct-2023 link a Exp 7574-2023 31-oct-2023.pdf (autorización Justicia Nacional Electoral sobre uso de boletas) 
-                                </p>
-                            </div>
-                        </div>
-                        <div className="border-b flex gap-20 flex-row border-black pl-40 pr-40 pb-8 pt-8 justify-start items-center">
-                            <img src="assets/resources/foto61.png" alt="" />
-                            <div>
-                                <h3 className="font-normal text-2xl">Habilitación de la urna de votación</h3>
-                                <p>
-                                    Habilitación de URNA. La urna deberá estar abierta y vacía a la vista de todos los fiscales. Luego se procede a cerrar la misma y colocar las fajas autoadhesivas sin dejar ninguna ranura posible para introducir o extraer sobres salvo la ranura de voto. Estas fajas deberán ser firmadas por las autoridades y fiscales. Foto6. Este proceso se hace cerca de las 8 hs. Ver Trampa URNA EMBARAZADA
-                                </p>
-                            </div>
-                        </div>
-                        <div className="border-b border-black pl-40 pr-40 pb-8 pt-8 justify-center items-center">
-                            <h3 className="font-normal text-2xl">Ordenar las boletas y verificar cartelería por ecima</h3>
-                            <p>
-                                Deberán ordenar las boletas por número de menor a mayor y de izquierda a derecha. Es importante verificar que en el cuarto oscuro no se encuentre cartelería que pueda interferir en la voluntad del/ de la elector/a y colocar en lugares visibles la información sobre de disposiciones y delitos electorales. Arts. 76 y 82 C.E.N.
-                            </p>
-                        </div>
+                    <ExpandableCard title="Recomendaciones antes de empezar" subtitle="Paso a paso" imgSrc="assets/images/space-before-graph.png">
+                        <ExpandableCardItem 
+                            imgSrc=""
+                            title="Primer contacto con los fiscales"
+                            description="Tomar contacto antes de la elección, de ser posible, con el/los fiscal/es general/es para coordinar previamente. O en su defecto tener contacto con el coordinador de fiscales de la zona."
+                        />
+
+                        <ExpandableCardItem 
+                            imgSrc=""
+                            title="Verificar la presencia de AFICHES PARTIDOS"
+                            description="Verificar que en la entrada o en el interior de la escuela o en el interior del aula que oficia de mesa NO HAYA afiches partidarios o de propaganda política o cualquier cosa que pueda inducir el voto (imágenes de Perón o Evita por ejemplo). Se deberá comunicar al Delegado de la Junta Electoral para que esta propaganda sea removida. "
+                        />
+
+                        <ExpandableCardItem 
+                            imgSrc=""
+                            title="Llevar DNI y celular"
+                            description="Llevar DNI y llevar cargador de teléfono."
+                        />
+
+                        <ExpandableCardItem 
+                            imgSrc=""
+                            title="Llegar temprano : antes de la 7 am"
+                            description="Llegar temprano a la escuela. Se recomienda llegar a las 7 am para tener tiempo de identificar participantes, lugares, etc."
+                        />
+
+                        
+                        <ExpandableCardItem 
+                            imgSrc=""
+                            title="Identificar al fiscal general del partido"
+                            description="Identificar fiscal general del partido quien entregará el poder emitido por LLA para el fiscal de mesa que deberá ser presentado ante las autoridades de mesa"
+                        />
+
+                        <ExpandableCardItem 
+                            imgSrc=""
+                            title="Tomar buena ubicación de la silla"
+                            description="De ser posible, si no está el auxiliar del presidente, tomar ubicación en la silla al lado del presidente de mesa para poder ir siguiendo el control de documentos de los votantes."
+                        />
+
+                        <ExpandableCardItem 
+                            imgSrc="assets/resources/foto21.png"
+                            title="Solicitar copia de padrón"
+                            description="Solicitar a la autoridad de mesa la copia del padrón. ¿Qué pasa si la autoridad de mesa no tiene copia del padrón para el fiscal LLA? Solución a ese problema: Sacar fotos al PADRÓN DE PARED de la mesa asignada (este afiche viene con la urna y elementos). El fiscal sacará varias fotos de ese padrón para poder tener la información de votantes de la mesa e irá anotando en un papel el nro de orden que votó llevando conjuntamente con la planilla control de votantes. (foto 2)"
+                        />
+
+                        <ExpandableCardItem 
+                            imgSrc="assets/resources/foto31.png"
+                            title="Cuarto oscuro"
+                            description="Preparación del cuarto oscuro"
+                        />
+
+                        <ExpandableCardItem 
+                            imgSrc="assets/resources/foto41.png"
+                            title="Habilitación"
+                            description="Habilitación del cuarto oscuro"
+                        />
+
+                        <ExpandableCardItem 
+                            imgSrc="assets/resources/foto161.png"
+                            title="Verificar que las boletas SEAN LAS OFICIALES "
+                            description="Verificar siempre que sean todas boletas oficializadas. Fecha 19 Noviembre 2023 y Fecha 22 Octubre 2023 Exp 7574-2023 31-oct-2023 link a Exp 7574-2023 31-oct-2023.pdf (autorización Justicia Nacional Electoral sobre uso de boletas)"
+                        />
+
+                        <ExpandableCardItem 
+                            imgSrc="assets/resources/foto51.png"
+                            title="Cuarto oscuro accesible"
+                            description="Verificar siempre que sean todas boletas oficializadas. Fecha 19 Noviembre 2023 y Fecha 22 Octubre 2023 Exp 7574-2023 31-oct-2023 link a Exp 7574-2023 31-oct-2023.pdf (autorización Justicia Nacional Electoral sobre uso de boletas) "
+                        />
+
+                        <ExpandableCardItem 
+                            imgSrc="assets/resources/foto61.png"
+                            title="Habilitación de la urna de votación"
+                            description="Habilitación de URNA. La urna deberá estar abierta y vacía a la vista de todos los fiscales. Luego se procede a cerrar la misma y colocar las fajas autoadhesivas sin dejar ninguna ranura posible para introducir o extraer sobres salvo la ranura de voto. Estas fajas deberán ser firmadas por las autoridades y fiscales. Foto6. Este proceso se hace cerca de las 8 hs. Ver Trampa URNA EMBARAZADA"
+                        />
+
+                        <ExpandableCardItem 
+                            imgSrc=""
+                            title="Ordenar las boletas y verificar cartelería por ecima"
+                            description="Deberán ordenar las boletas por número de menor a mayor y de izquierda a derecha. Es importante verificar que en el cuarto oscuro no se encuentre cartelería que pueda interferir en la voluntad del/ de la elector/a y colocar en lugares visibles la información sobre de disposiciones y delitos electorales. Arts. 76 y 82 C.E.N."
+                        />
                     </ExpandableCard>
                 </div>
             </div>
