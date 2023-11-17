@@ -2,13 +2,14 @@ import { useState } from "react";
 import { IDropdownProps } from "./types";
 import { Link } from "react-router-dom"
 import { paths } from "../../routes/paths";
-import { isMobile } from 'react-device-detect';
+import MenuIcon from '@mui/icons-material/Menu';
 import './styles.css';
+import { useMediaQuery } from "react-responsive";
 
 const Dropdown: React.FC<IDropdownProps> = ({name}) => {
 
     const [isVisible, setIsVisible] = useState<boolean>(false);
-
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 800px)' })
     window.addEventListener("click", (e)=>{
         const className = (e.target as HTMLDivElement).className;
         if(!className.includes("dropdown") || !className.includes("dropdown-btn")) setIsVisible(false);
@@ -18,9 +19,9 @@ const Dropdown: React.FC<IDropdownProps> = ({name}) => {
         <div className="dropdown">
             <div className="flex flex-row justify-center items-center">
                 {
-                    isMobile ? 
+                    isTabletOrMobile ? 
                     <button className="dropdown-btn font-bold" onClick={()=>setIsVisible(!isVisible)}>
-                        X
+                        <MenuIcon />
                     </button> : 
                     <>
                         <button className="dropdown-btn font-bold" onClick={()=>setIsVisible(!isVisible)}>{name}</button>

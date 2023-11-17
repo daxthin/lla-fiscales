@@ -1,19 +1,17 @@
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import "./styles.css";
+import { Hero } from "../../components/hero";
 
 const Denunciar = () => {
   return (
 	<main id="root">
 		<Navbar />
 		<header>
-			<section id="hero" className="flex flex-col justify-center items-center gap-8 w-full relative">
-				<div className="flex flex-col gap-11 mt-32 mb-44">
-					<h3 className="text-black font-bold text-2xl text-center">Cómo fiscalizar</h3>
-					<h1 className="text-black font-bold text-6xl text-center">Cuándo, cómo y dónde denunciar</h1>
-				</div>
-				<img src="assets/images/hero_img_var2.png" alt="" id="hero-bg" className="absolute w-full h-full object-cover -z-10" />
-			</section>
+            <Hero 
+				title="Cuándo, cómo y dónde denunciar" 
+				imgSrc="assets/images/hero_img_var2.png"
+			/>
 		</header>
         <section className="flex flex-col justify-center items-center">
             <div className="w-[1200px] mt-16 flex flex-col gap-10">

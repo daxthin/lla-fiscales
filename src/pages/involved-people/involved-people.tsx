@@ -2,19 +2,17 @@ import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import ExpandableItem from "../../components/expandable-item";
 import "./styles.css";
+import { Hero } from "../../components/hero";
 
 const InvolvedPeople = () => {
   return (
 	<main id="root">
 		<Navbar />
 		<header>
-			<section id="hero" className="flex flex-col justify-center items-center gap-8 w-full relative">
-				<div className="flex flex-col gap-11 mt-32 mb-44">
-					<h3 className="text-black font-bold text-2xl text-center">Cómo fiscalizar</h3>
-					<h1 className="text-black font-bold text-6xl text-center">Personas que intervienen</h1>
-				</div>
-				<img src="assets/images/hero_img_var2.png" alt="" id="hero-bg" className="absolute w-full h-full object-cover -z-10" />
-			</section>
+			<Hero 
+				title="Personas que intervienen" 
+				imgSrc="assets/images/hero_img_var2.png"
+			/>
 		</header>
 		<section className="mt-32 flex flex-col items-center">
 			<div className="flex flex-col w-1/2">

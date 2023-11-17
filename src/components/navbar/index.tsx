@@ -1,18 +1,23 @@
 import { Link } from "react-router-dom";
 import Dropdown from "../dropdown";
 import Search from "../search";
-import { isMobile } from 'react-device-detect';
 import { paths } from "../../routes/paths";
+import { useMediaQuery } from "react-responsive";
 
 const Navbar: React.FC = () => {
+    
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 800px)' })
+
     return (
-        isMobile ?
-        <nav className="w-full flex flex-row justify-around items-center bg-white p-4">
-            <div className="flex flex-row gap-8 justify-center items-center">
-            <img src="assets/images/lla-mobile-logo.png" alt="" draggable={false}/> 
-                <Dropdown name="Cómo fiscalizar" />
+        isTabletOrMobile ?
+        <nav className="w-full grid grid-cols-3 grid-rows-1 justify-around items-center bg-white p-4">
+            <div className="flex flex-row gap-8 justify-center items-center w-14">
+                <img className="col-start-1 col-end-2" src="assets/images/lla-mobile-logo.png" alt="" draggable={false}/> 
             </div>
-            <Search></Search>
+            <div className="flex flex-row gap-4 justify-center items-center col-start-3 col-end-4">
+                <Search></Search>
+                <Dropdown name="" />
+            </div>
         </nav>
             : 
         <nav className="w-full flex flex-row justify-around items-center bg-white p-4">

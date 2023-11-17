@@ -1,51 +1,33 @@
 import Card from "../../components/card";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
-import Button from "../../components/button";
 import { paths } from "../../routes/paths";
 import "./styles.css";
+import { Hero } from "../../components/hero";
+import Button from "../../components/button";
 
 const HomePage = () => {
+
+
   return (
     <main id="root">
       <Navbar />
       <header>
-        <section
-          id="hero"
-          className="flex flex-col justify-center items-center gap-8 w-full relative pb-32"
+        <Hero 
+          title="La Libertad Avanza" 
+          description="Bienvenidos a la página de Fiscales de La Libertad Avanza. En nuestra página ofrecemos toda información para fiscales generales y de mesa para el próximo comicio del 19 de Noviembre de 2023." 
+          imgSrc="assets/images/hero_img.png"
         >
-          <div className="flex flex-col gap-11 mt-32">
-            <h3 className="text-black font-bold text-2xl text-center">
-              Fiscales
-            </h3>
-            <h1 className="text-black font-bold text-4xl md:text-6xl text-center">
-              La libertad avanza
-            </h1>
-            <div className="m-auto mt-4 mb-4 w-[350px] md:w-[960px]">
-              <p className="text-black font-medium md:text-2xl text-center">
-                Bienvenidos a la página de Fiscales de La Libertad Avanza. En
-                nuestra página ofrecemos toda información para fiscales
-                generales y de mesa para el próximo comicio del 19 de Noviembre
-                de 2023.
-              </p>
-            </div>
-            <p className="font-bold text-lg text-center">
-              Si ves alguna irregularidad no dudes en denunciar
-            </p>
-          </div>
+          <p className="font-bold text-lg text-center">Si ves alguna irregularidad no dudes en denunciar</p>
           <Button isLink href={paths.home}>Quiero Denunciar</Button>
-          <img
-            src="assets/images/hero_img.png"
-            alt=""
-            id="hero-bg"
-            className="absolute w-full h-full object-cover -z-10"
-          />
-        </section>
+        </Hero>
       </header>
       <section id="important-info">
         <div className="flex flex-col justify-between items-center gap-10 mt-28 mb-28">
           <h3 className="text-black font-bold text-2xl">Qué necesitas saber</h3>
-          <h1 className="text-black font-bold text-4xl md:text-5xl text-center">Datos importantes</h1>
+          <h1 className="text-black font-bold text-4xl md:text-5xl text-center">
+            Datos importantes
+          </h1>
           <p className="text-black font-normal text-lg text-center">
             En los distintos enlaces encontrará toda la información disponible
             sobre este tema.

@@ -4,19 +4,17 @@ import {ExpandableCard, ExpandableCardItem} from "../../components/expandable-ca
 import { paths } from "../../routes/paths";
 import "./styles.css";
 import { Link } from "react-router-dom";
+import { Hero } from "../../components/hero";
 
 const BeforeVote = () => {
   return (
 	<main id="root">
 		<Navbar />
 		<header>
-			<section id="hero" className="flex flex-col justify-center items-center gap-8 w-full relative">
-				<div className="flex flex-col gap-11 mt-32 mb-44">
-					<h3 className="text-black font-bold text-2xl text-center">Cómo fiscalizar</h3>
-					<h1 className="text-black font-bold text-6xl text-center">El paso a paso</h1>
-				</div>
-				<img src="assets/images/hero_img_var2.png" alt="" id="hero-bg" className="absolute w-full h-full object-cover -z-10" />
-			</section>
+            <Hero 
+				title="El paso a paso" 
+				imgSrc="assets/images/hero_img_var2.png"
+			/>
 		</header>
         <section className="flex flex-col justify-center items-center">
             <div className="w-[980px]">

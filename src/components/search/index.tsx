@@ -1,11 +1,13 @@
-import { isMobile } from 'react-device-detect';
+import { ISearchProps } from './types';
+import SearchIcon from '@mui/icons-material/Search';
+import { useMediaQuery } from 'react-responsive';
 
-const Search = () => {
-  console.log(isMobile);
+const Search: React.FC<ISearchProps> = () => {
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 800px)' })
   return (
-        isMobile ?
+    isTabletOrMobile ?
         <button className="p-2">
-          <img src="assets/images/Search.png" alt="" />
+          <SearchIcon />
         </button> :
         <div className="w-[350px] border border-black flex flex-row items-center gap-2">
             <div className="p-2">
