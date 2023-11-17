@@ -1,28 +1,68 @@
 import { useState } from "react";
 import { IDropdownProps } from "./types";
+import { Link } from "react-router-dom"
+import { paths } from "../../routes/paths";
+import { isMobile } from 'react-device-detect';
 import './styles.css';
 
-const Dropdown: React.FC<IDropdownProps> = ({name, children}) => {
+const Dropdown: React.FC<IDropdownProps> = ({name}) => {
 
     const [isVisible, setIsVisible] = useState<boolean>(false);
 
     window.addEventListener("click", (e)=>{
         const className = (e.target as HTMLDivElement).className;
-        if(!className.includes("dropdown")) setIsVisible(false);
+        if(!className.includes("dropdown") || !className.includes("dropdown-btn")) setIsVisible(false);
     })
 
     return (
         <div className="dropdown">
-            <div className="flex flex-row justify-center items-center" onClick={()=>setIsVisible(!isVisible)}>
-                <button className="dropdown-btn font-bold">{name}</button>
-                <div className="min-w-[25px]">
-                    <img src="assets/images/sort-down.png" alt="" />
-                </div>
+            <div className="flex flex-row justify-center items-center">
+                {
+                    isMobile ? 
+                    <button className="dropdown-btn font-bold" onClick={()=>setIsVisible(!isVisible)}>
+                        X
+                    </button> : 
+                    <>
+                        <button className="dropdown-btn font-bold" onClick={()=>setIsVisible(!isVisible)}>{name}</button>
+                        <div className="min-w-[25px]">
+                            <img src="assets/images/sort-down.png" alt="" />
+                        </div> 
+                    </>
+                }
             </div>
             {
                 <div className={`dropdown-list transition-opacity w-full md:w-auto left-0 md:left-auto duration-200 ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'} bg-white absolute rounded-[10px] p-4 mt-4 z-10`}>
                     <ul className="flex flex-col gap-1">
-                        {children}
+                    <li>
+                        <Link to={paths.involvedPeople}  className="text-black font-semibold text-base">
+                            Personas que intervienen
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to={paths.beforeVote} className="text-black font-semibold text-base">
+                            El paso a paso
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to={paths.certDeEscrutinio} className="text-black font-semibold text-base">
+                            El certificado de Escrutinio
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to={paths.commonCheats} className="text-black font-semibold text-base">
+                            Trampas comunes
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to={paths.boletasYDocValidos} className="text-black font-semibold text-base">
+                            Boletas y documentos válidos
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to={paths.denunciar} className="text-black font-semibold text-base">
+                            Cuándo, cómo y dónde denunciar
+                        </Link>
+                    </li>
                     </ul>
                 </div>
             }
