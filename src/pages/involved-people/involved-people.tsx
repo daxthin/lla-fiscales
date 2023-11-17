@@ -15,7 +15,6 @@ const InvolvedPeople = () => {
 			/>
 		</header>
 		<section className="mt-32 flex flex-col items-center">
-			<div className="flex flex-col w-1/2">
 				<ExpandableItem title="Autoridades de mesa">
 					<p>
 						Son ciudadanos/as elegidos/as aleatoriamente por la Justicia Nacional Electoral. Deben ser electores/as hábiles y votar en la mesa en que actúan, tener entre 18 y 70 años y saber leer y escribir. Por cada mesa de votación hay dos autoridades: El/la Presidente y el/la suplente quien auxilia al primero. Si falta el presidente queda el suplente solo. Art. 72 y 73 C.E.N.
@@ -35,7 +34,7 @@ const InvolvedPeople = () => {
 					</p>
 				</ExpandableItem>
 				<ExpandableItem title="Comando General Electoral">
-					<div className="flex flex-row items-center justify-center gap-4">
+					<div className="flex flex-row items-center justify-center gap-4 flex-wrap">
 						<p>
 							Fuerzas armadas o de seguridad que custodian la escuela donde se realiza el comicio. Su tarea es velar por la seguridad de las urnas y autoridades, evitar alteraciones del orden en el establecimiento. Gendarmería estará a cargo de la custodia de las urnas. Fuerzas de seguridad a cargo de la seguridad de las alteraciones del orden en el establecimiento.
 						</p>
@@ -43,7 +42,7 @@ const InvolvedPeople = () => {
 					</div>
 				</ExpandableItem>
 				<ExpandableItem title="Delegado de la junta electoral">
-					<div className="grid grid-cols-[auto_20em] grid-rows-1">
+					<div className="grid md:grid-cols-[auto_20em] md:grid-rows-1 grid-rows-2 grid-cols-1">
 						<p>
 							Es el representante de la Junta Electoral (organismo máximo judicial) en el establecimiento. Es el nexo presente en la escuela y la Junta Electoral. Esta persona deberá decidir sobre aquella cuestión que suceda antes, durante o después del comicio y deba tomarse una decisión al respecto. Esta persona es MUY IMPORTANTE como referencia, consultas y para hacer denuncias. Esta persona deberá identificarse a través de una designación de la Junta Electoral con nombre, apellido y número DNI. Identificar a esta persona apenas uno llega a la escuela es una de las primeras cosas que debe hacer un fiscal. Foto1
 						</p>
@@ -100,7 +99,6 @@ const InvolvedPeople = () => {
 						</p>
 					</div>
 				</ExpandableItem>
-			</div>
 		</section>
 		<Footer></Footer>
 	</main>
