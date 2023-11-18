@@ -38,38 +38,38 @@ const BeforeVote = () => {
               imgSrc="assets/images/space-before-graph.png"
             >
               <ExpandableCardItem
-                imgSrc=""
+                imgSrc="assets/resources/fiscales.jpg"
                 title="Primer contacto con los fiscales"
                 description="Tomar contacto antes de la elección, de ser posible, con el/los fiscal/es general/es para coordinar previamente. O en su defecto tener contacto con el coordinador de fiscales de la zona."
               />
 
               <ExpandableCardItem
-                imgSrc=""
+                imgSrc="assets/resources/propaganda.png"
                 title="Verificar la presencia de AFICHES PARTIDOS"
                 description="Verificar que en la entrada o en el interior de la escuela o en el interior del aula que oficia de mesa NO HAYA afiches partidarios o de propaganda política o cualquier cosa que pueda inducir el voto (imágenes de Perón o Evita por ejemplo). Se deberá comunicar al Delegado de la Junta Electoral para que esta propaganda sea removida. "
               />
 
               <ExpandableCardItem
-                imgSrc=""
+                imgSrc="assets/resources/dni.png"
                 title="Llevar DNI y celular"
                 description="Llevar DNI y llevar cargador de teléfono."
               />
 
               <ExpandableCardItem
-                imgSrc=""
+                imgSrc="assets/resources/puntualidad.png"
                 title="Llegar temprano : antes de la 7 am"
                 description="Llegar temprano a la escuela. Se recomienda llegar a las 7 am para tener tiempo de identificar participantes, lugares, etc."
               />
 
 
               <ExpandableCardItem
-                imgSrc=""
+                imgSrc="assets/resources/jerarquia.png"
                 title="Identificar al fiscal general del partido"
                 description="Identificar fiscal general del partido quien entregará el poder emitido por LLA para el fiscal de mesa que deberá ser presentado ante las autoridades de mesa"
               />
 
               <ExpandableCardItem
-                imgSrc=""
+                imgSrc="assets/resources/lugares.png"
                 title="Tomar buena ubicación de la silla"
                 description="De ser posible, si no está el auxiliar del presidente, tomar ubicación en la silla al lado del presidente de mesa para poder ir siguiendo el control de documentos de los votantes."
               />
@@ -111,7 +111,7 @@ const BeforeVote = () => {
               />
 
               <ExpandableCardItem
-                imgSrc=""
+                imgSrc="assets/resources/orden.jfif"
                 title="Ordenar las boletas y verificar cartelería por ecima"
                 description="Deberán ordenar las boletas por número de menor a mayor y de izquierda a derecha. Es importante verificar que en el cuarto oscuro no se encuentre cartelería que pueda interferir en la voluntad del/ de la elector/a y colocar en lugares visibles la información sobre de disposiciones y delitos electorales. Arts. 76 y 82 C.E.N."
               />

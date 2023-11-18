@@ -12,7 +12,7 @@ export const ExpandableCard: React.FC<IExpandableCardProps> = ({ children, title
         <section className='flex flex-col w-full rounded-2xl shadow-md mt-8'>
           <div className={`expandable-card bg-[#F3F3F3] ${expand ? 'rounded-t-2xl bg-[#DCD8E0]' : 'rounded-2xl shadow-md'} flex flex-row justify-around w-full p-6`}
             onClick={() => setExpand(!expand)}>
-            <picture className="flex flex-row justify-center items-center">
+            <picture className="flex flex-row justify-center items-center mr-2">
               <img
                 draggable={false}
                 src={imgSrc}
