@@ -2,16 +2,12 @@ import { ISearchProps } from './types';
 import SearchIcon from '@mui/icons-material/Search';
 import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
-
+import { Switch } from './Switch';
 
 const Search: React.FC<ISearchProps> = () => {
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 800px)' })
   const [ isShow, setIsShow ] = useState<boolean>(false)
-
-  window.addEventListener("click", (e)=>{
-    const className = (e.target as HTMLDivElement).className;
-    if(!className.includes("search") || !className.includes("search-btn")) setIsShow(false);
-})
+  
 
   return (
     isTabletOrMobile 
@@ -19,17 +15,9 @@ const Search: React.FC<ISearchProps> = () => {
         (
           <>
             <button  onClick={()=>setIsShow(!isShow)} className="search-btn p-2">
-              <SearchIcon />
+              <SearchIcon className='search-btn'/>
             </button>
-            {
-              isShow && 
-                <div className={`search absolute z-100 left-[50px] top-[92px] shadow-xl rounded-lg bg-white ${isShow ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
-                  <input type="text" placeholder="Escribe tu búsqueda" className="search-input border-none outline-none w-64 p-2 rounded-lg"/>
-                  <button className="search-btn p-2">
-                    <SearchIcon />
-                  </button>
-                </div>
-            }
+            { isShow && <Switch />}
           </>
         ) 
       :

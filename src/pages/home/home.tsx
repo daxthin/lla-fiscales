@@ -20,7 +20,7 @@ const HomePage = () => {
           imgSrc="assets/images/hero_img.png"
         >
           <p className="font-bold text-lg text-center">Si ves alguna irregularidad no dudes en denunciar</p>
-          <Button isLink href={paths.home}>Quiero Denunciar</Button>
+          <Button isLink href={paths.denunciar}>Quiero Denunciar</Button>
         </Hero>
       </header>
       <section id="important-info">
@@ -55,8 +55,8 @@ const HomePage = () => {
             description="Información de la Cámara Nacional Electoral con sus distintas resoluciones acordadas"
           />
         </div>
-        <div className="flex flex-col justify-center items-center mt-44 mb-44 shadow-xl">
-          <div className="flex flex-row w-[380px] md:w-1/2 gap-2 pt-10 pb-10 ml-8 mr-8 bg-[#FFF4F4] border-l-[6px] border-l-[#D64B4B]  border-r-2 rounded-lg">
+        <div className="flex flex-col justify-center items-center mt-44 mb-44">
+          <div className="flex flex-row w-[380px] md:w-1/2 gap-2 pt-10 pb-10 ml-8 mr-8 bg-[#FFF4F4] border-l-[6px] border-l-[#D64B4B] shadow-xl border-r-2 rounded-lg">
             <div className="w-14 h-auto m-1">
               <img src="assets/images/alert-icon.svg" alt="logo informativo" className=" relative w-full h-auto -mt-2 ml-1" />
             </div>

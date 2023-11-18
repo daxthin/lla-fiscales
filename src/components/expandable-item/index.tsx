@@ -1,11 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IExpandableItemProps } from "./types";
+
 import './styles.css';
+import { useReduceToogle } from "../../stores/useReduceToggle";
 
 const ExpandableItem: React.FC<IExpandableItemProps> = ({title, subtitle, children, iconSrc}) => {
+  const { isToggle } =useReduceToogle()
+  const [collapse, setCollapse] = useState(true)
 
-  const [collapse, setCollapse] = useState(true);
+  useEffect(()=> {
+    isToggle 
+      ? setCollapse(false) 
+      : setCollapse(true)
+  },[isToggle])
 
+  
+  console.log('estado local:', collapse)
   return (
     <div className="w-full pl-4 pr-4">
       <div className="flex flex-col border-t border-black p-4 w-full">
