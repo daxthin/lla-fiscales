@@ -3,4 +3,5 @@ export interface IHeroProps {
     description?: string;
     imgSrc?: string;
     children?: React.ReactNode;
+    subtitle?: string;
 }

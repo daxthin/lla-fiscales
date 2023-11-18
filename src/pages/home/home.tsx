@@ -14,12 +14,13 @@ const HomePage = () => {
       <Navbar />
       <header>
         <Hero 
-          title="La Libertad Avanza" 
+          title="La Libertad Avanza"
+          subtitle="Fiscales"
           description="Bienvenidos a la página de Fiscales de La Libertad Avanza. En nuestra página ofrecemos toda información para fiscales generales y de mesa para el próximo comicio del 19 de Noviembre de 2023." 
           imgSrc="assets/images/hero_img.png"
         >
           <p className="font-bold text-lg text-center">Si ves alguna irregularidad no dudes en denunciar</p>
-          <Button isLink href={paths.home}>Quiero Denunciar</Button>
+          <Button isLink href={paths.denunciar}>Quiero Denunciar</Button>
         </Hero>
       </header>
       <section id="important-info">
@@ -55,12 +56,12 @@ const HomePage = () => {
           />
         </div>
         <div className="flex flex-col justify-center items-center mt-44 mb-44">
-          <div className="flex flex-row w-[380px] md:w-1/2 gap-7 pt-10 pb-10 pl-8 pr-8 bg-[#FFF4F4] border-l-[6px] border-l-[#D64B4B] rounded-lg">
-            <div className="flex flex-col w-20 h-auto">
-              <img src="assets/images/alert-icon.svg" alt="" />
+          <div className="flex flex-row w-[380px] md:w-1/2 gap-2 pt-10 pb-10 ml-8 mr-8 bg-[#FFF4F4] border-l-[6px] border-l-[#D64B4B] shadow-xl border-r-2 rounded-lg">
+            <div className="w-14 h-auto m-1">
+              <img src="assets/images/alert-icon.svg" alt="logo informativo" className=" relative w-full h-auto -mt-2 ml-1" />
             </div>
-            <div className="flex flex-col">
-              <span className="text-[#FF0000] font-bold mb-2 text-lg">
+            <div className="flex flex-col w-9/12">
+              <span className="text-[#FF0000] font-bold mb-2 text-2xl">
                 Aviso importante
               </span>
               <p className="font-semibold">
