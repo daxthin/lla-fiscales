@@ -2,7 +2,7 @@ import { useMediaQuery } from "react-responsive"
 import { IHeroProps } from "./types"
 import './styles.css';
 
-export const Hero: React.FC<IHeroProps> = ({title = "Sample title", description = '', imgSrc = '', subtitle = '', children}) => {
+export const Hero: React.FC<IHeroProps> = ({title= "Sample title", description, imgSrc, subtitle, children}) => {
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 800px)' })
     return (
         <section id="hero" className="flex flex-col justify-center items-center gap-8 w-full relative pb-32">
