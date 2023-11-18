@@ -16,7 +16,7 @@ const BolestasYDocValidos = () => {
                 />
             </header>
             <section className="flex flex-col justify-center items-center">
-                <div className="w-[1200px] mt-16 flex flex-col gap-10">
+                <div className="w-full md:w-[1200px] mt-16 flex flex-col gap-10 p-4">
                     <h1 className="font-bold text-[1.9rem]">Boletas y documentos válidos</h1>
                     <h2 className="font-bold text-2xl">En esta sección encontrará las boletas válidas y documentos vigentes para ser usadas en el ballotage del 19 de Noviembre de 2023</h2>
                     <BoletasYdocTable/>

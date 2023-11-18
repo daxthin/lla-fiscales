@@ -20,8 +20,8 @@ const CertificadoDeEscrutinio = () => {
         />
       </header>
       <section className="flex flex-col justify-center items-center">
-        <div className={`${isTabletOrMobile ? 'w-full ml-4 mr-4' : 'w-[980px] mt-16 flex flex-col gap-10'}}`}>
-          <h1 className="font-bold text-3xl ml-2 mr-2">La importancia del certificado de escrutinio</h1>
+        <div className={`${isTabletOrMobile ? 'w-full ml-4 mr-4' : 'w-[980px] mt-16 flex flex-col gap-10'}`}>
+          <h1 className="font-bold text-3xl text-center">La importancia del certificado de escrutinio</h1>
 
           <AlertCard message={"El CERTIFICADO DE ESCRUTINIO es nuestro COMPROBANTE CONTRA EL FRAUDE. Si nos vamos sin ese documento todo lo hecho durante el día será en vano."}></AlertCard>
 

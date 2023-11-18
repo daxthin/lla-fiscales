@@ -42,7 +42,7 @@ const rows = [
 export default function CertEscrutinio() {
   return (
     <TableContainer component={Paper} className='rounded-lg'>
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+      <Table sx={{ minWidth: 200 }} aria-label="simple table">
         <TableHead className='bg-[#F9FAFB]'>
           <TableRow>
             <TableCell>
