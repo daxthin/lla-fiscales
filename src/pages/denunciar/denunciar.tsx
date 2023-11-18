@@ -14,12 +14,11 @@ const Denunciar = () => {
 				imgSrc="assets/images/hero_img_var2.png"
 			/>
 		</header>
-        <section className="flex flex-col justify-center items-center">
-            <div className="w-[1200px] mt-16 flex flex-col gap-10">
-                <h1 className="font-bold text-[1.9rem]">Cuándo, cómo y dónde denunciar</h1>
-
-                <div className="grid grid-rows-1 grid-cols-2 gap-20">
-                        <div className="mt-8">
+        <section className="flex flex-row justify-center items-center p-4 md:gap-20 flex-wrap">
+            <div className="mt-16 flex flex-col gap-10">
+                <div className="flex flex-col justify-evenly gap-20 flex-wrap">
+                        <h1 className="font-bold text-[1.9rem]">Cuándo, cómo y dónde denunciar</h1>
+                        <div className="mt-8 md:w-[700px]">
                             <p>
                                 Inicialmente cualquier irregularidad antes, durante o después del comicio debe ser realizada ante el <b>REPRESENTANTE DE LA JUNTA ELECTORAL</b> al momento de suceder el evento (no espere horas para hacer su denuncia). Busque a esta persona, comuníquele el suceso que está en contra al normal funcionamiento (una persona que no la dejan votar pese a estar en el padrón y correctamente identificada, personas extrañas en el recinto, roturas de boletas, amenazas, etc.).
                             </p>
@@ -34,16 +33,16 @@ const Denunciar = () => {
                             </ul>
                         </div>
                         <div>
-                        <div className="bg-[#F8F8F8] h-[800px] w-[800px] rounded-2xl flex flex-row justify-center items-center">
-                            <img src="assets/resources/image422.png" alt=""  className="h-full w-full"/>
-                        </div>
                     </div>
                 </div>
-
-                <Button isLink href={'https://www.padron.gov.ar/cne_denuncias/'}>Quiero Denunciar</Button>
-
+            </div>
+            <div className="bg-[#F8F8F8] rounded-2xl flex flex-row justify-center items-center">
+                <img src="assets/resources/image422.png" alt=""  className="h-full w-full"/>
             </div>
         </section>
+        <div className="w-full flex flex-row items-center justify-center mt-8 mb-8">
+            <Button isLink href={'https://www.padron.gov.ar/cne_denuncias/'}>Quiero Denunciar</Button>
+        </div>
 		<Footer></Footer>
 	</main>
     );

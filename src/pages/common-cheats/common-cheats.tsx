@@ -4,6 +4,7 @@ import "./styles.css";
 import { Hero } from "../../components/hero";
 
 const CommonCheats = () => {
+
   return (
 	<main id="root">
 		<Navbar />
@@ -14,7 +15,7 @@ const CommonCheats = () => {
 			/>
 		</header>
         <section className="flex flex-col justify-center items-center">
-            <div className="w-[980px] mt-16 flex flex-col gap-10">
+            <div className="w-full mt-16 flex flex-col gap-10 p-4">
                 <h1 className="font-bold text-[1.9rem]">La importancia del certificado de escrutinio</h1>
 
                 <div className="grid grid-rows-1 grid-cols-[auto_auto] select-none">

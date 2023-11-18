@@ -21,7 +21,7 @@ const InvolvedPeople = () => {
 			/>
 		</header>
 		<section className={`flex flex-col items-center ${ isTabletOrMobile ? '-mt-40' : 'mt-32'}`}>
-			{ isTabletOrMobile && <ExpanseToggle /> }
+			{ <ExpanseToggle /> }
 
 				<ExpandableItem title="Autoridades de mesa">
 					<p>
