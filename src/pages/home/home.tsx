@@ -5,6 +5,7 @@ import { paths } from "../../routes/paths";
 import "./styles.css";
 import { Hero } from "../../components/hero";
 import Button from "../../components/button";
+import AlertCard from "../../components/alert-card";
 
 const HomePage = () => {
 
@@ -20,7 +21,7 @@ const HomePage = () => {
           imgSrc="assets/images/hero_img.png"
         >
           <p className="font-bold text-lg text-center">Si ves alguna irregularidad no dudes en denunciar</p>
-          <Button isLink href={paths.denunciar}>Quiero Denunciar</Button>
+          <Button isLink href={paths.denunciar}>Quiero denunciar</Button>
         </Hero>
       </header>
       <section id="important-info">
@@ -55,23 +56,8 @@ const HomePage = () => {
             description="Información de la Cámara Nacional Electoral con sus distintas resoluciones acordadas"
           />
         </div>
-        <div className="flex flex-col justify-center items-center mt-44 mb-44">
-          <div className="flex flex-row w-[380px] md:w-1/2 gap-2 pt-10 pb-10 ml-8 mr-8 bg-[#FFF4F4] border-l-[6px] border-l-[#D64B4B] shadow-xl border-r-2 rounded-lg">
-            <picture className="w-14 h-auto m-1">
-              <img src="assets/images/alert-icon.svg" alt="logo informativo" className=" relative w-full h-auto -mt-2 ml-1" />
-            </picture>
-            <div className="flex flex-col w-9/12">
-              <span className="text-[#FF0000] font-bold mb-2 text-2xl">
-                Aviso importante
-              </span>
-              <p className="font-semibold">
-                Cualquier variación escrita entre esta página y las referencias
-                oficiales del Código Electoral Nacional (C.N.E)/ Cámara Nacional
-                Electoral (C.N.E). Siempre es válidos las referencias oficiales
-              </p>
-            </div>
-          </div>
-        </div>
+        <AlertCard message={'Cualquier variación escrita entre esta página y las referencias oficiales del Código Electoral Nacional (C.N.E)/ Cámara Nacional Electoral (C.N.E). Siempre es válidos las referencias oficiales'}/>
+
       </section>
       {/* Make sure to import and use your Footer component */}
       <Footer />
