@@ -2,6 +2,7 @@ import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import "./styles.css";
 import { Hero } from "../../components/hero";
+import Button from "../../components/button";
 
 const Denunciar = () => {
   return (
@@ -33,11 +34,13 @@ const Denunciar = () => {
                             </ul>
                         </div>
                         <div>
-                        <div className="bg-[#F8F8F8] h-full rounded-2xl flex flex-row justify-center items-center">
-                            <img src="assets/resources/image422.png" alt="" />
+                        <div className="bg-[#F8F8F8] h-[800px] w-[800px] rounded-2xl flex flex-row justify-center items-center">
+                            <img src="assets/resources/image422.png" alt=""  className="h-full w-full"/>
                         </div>
                     </div>
-                    </div>
+                </div>
+
+                <Button isLink href={'https://www.padron.gov.ar/cne_denuncias/'}>Quiero Denunciar</Button>
 
             </div>
         </section>

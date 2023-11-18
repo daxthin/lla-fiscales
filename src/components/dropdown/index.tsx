@@ -13,11 +13,6 @@ const Dropdown: React.FC<IDropdownProps> = ({name}) => {
 
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 800px)' })
 
-    window.addEventListener("click", (e)=>{
-        const className = (e.target as HTMLDivElement).className;
-        if(!className.includes("dropdown") || !className.includes("dropdown-btn")) setIsVisible(false);
-    })
-
     return (
         <div className="dropdown">
             <div className="flex flex-row justify-center items-center">

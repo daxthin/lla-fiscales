@@ -3,8 +3,13 @@ import Footer from "../../components/footer";
 import ExpandableItem from "../../components/expandable-item";
 import "./styles.css";
 import { Hero } from "../../components/hero";
+import { ExpanseToggle } from "../../components/toggle/ExpanseToggle";
+import { useMediaQuery } from "react-responsive";
 
 const InvolvedPeople = () => {
+
+	const isTabletOrMobile = useMediaQuery({ query: '(max-width: 800px)' })
+	
   return (
 	<main id="root">
 		<Navbar />
@@ -15,7 +20,9 @@ const InvolvedPeople = () => {
 				imgSrc="assets/images/hero_img_var2.png"
 			/>
 		</header>
-		<section className="mt-32 flex flex-col items-center">
+		<section className={`flex flex-col items-center ${ isTabletOrMobile ? '-mt-40' : 'mt-32'}`}>
+			{ isTabletOrMobile && <ExpanseToggle /> }
+
 				<ExpandableItem title="Autoridades de mesa">
 					<p>
 						Son ciudadanos/as elegidos/as aleatoriamente por la Justicia Nacional Electoral. Deben ser electores/as hábiles y votar en la mesa en que actúan, tener entre 18 y 70 años y saber leer y escribir. Por cada mesa de votación hay dos autoridades: El/la Presidente y el/la suplente quien auxilia al primero. Si falta el presidente queda el suplente solo. Art. 72 y 73 C.E.N.
