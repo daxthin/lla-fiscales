@@ -8,12 +8,12 @@ const CardVariantTwo: React.FC<ICardVariantTwoProps> = ({title = "Sample title",
             </div>
             <div className="w-full bg-white pb-16 pl-8 pr-8 pt-6 rounded-b-2xl">
                 <div className="flex flex-row items-center gap-2">
-                    <div>
-                        <img src="assets/images/askq.png" alt="" />
-                    </div>
+                    <picture>
+                        <img src="assets/images/askq.png" alt="logo de pregunta" className="w-full h-auto"/>
+                    </picture>
                     <h3 className="font-bold text-2xl">{title}</h3>
                 </div>
-                <p className="mt-8">{description}</p>
+                <p className="mt-8 text-lg">{description}</p>
             </div>
         </div>
     )
