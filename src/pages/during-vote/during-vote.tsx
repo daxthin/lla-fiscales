@@ -8,6 +8,7 @@ import ExpandableItem from "../../components/expandable-item";
 import { Hero } from "../../components/hero";
 import { useMediaQuery } from "react-responsive";
 import { ExpanseToggle } from "../../components/toggle/ExpanseToggle";
+import AlertCard from "../../components/alert-card";
 
 const DuringVote = () => {
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 800px)' })
@@ -219,29 +220,12 @@ const DuringVote = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-row justify-center items-center mt-8 mb-20">
-                  <div className={`bg-[#FFF4F4] border-l-[6px] border-l-[#D64B4B] rounded-lg place-items-center ${isTabletOrMobile ? "" : "grid grid-rows-1 grid-cols-2 gap-7 pt-10 pb-10 pl-8 pr-8"}`}>
-                    <div className="flex flex-col">
-                      <div className="flex flex-row justify-start items-center gap-4">
-                        <picture className="w-14 h-auto m-1">
-                          <img src="assets/images/alert-icon.svg" alt="logo de alerta" />
-                        </picture>
-                        <span className="text-[#FF0000] font-bold text-2xl mb-2">
-                          Aviso importante
-                        </span>
-                      </div>
-                      <p className={`font-semibold ${isTabletOrMobile ? "pl-14 w-11/12" : "w-full text-left mt-4 ml-4"}`}>
-                        Los votos de identidad impugnada y del personal subordinado al Comando General Electoral serán contabilizados, pero no abiertos ni escrutados en la mesa.
-                        <br />
-                        <br />
-                        Faltan sobres para el comando: Ante la falta de sobres para el Comando Electoral, deberán utilizar un sobre de voto impugnado, tachar esa leyenda y agregar a mano “Voto Comando Electoral”. El mismo deberá ser firmado por las autoridades de mesa.
-                      </p>
-                    </div>
-                    <picture className={`bg-[#F0F0F0] p-4 rounded-2xl ${isTabletOrMobile ? "w-14 h-auto" : ""}`}>
-                      <img className="h-full w-full relative" src="assets/resources/image453.png" alt="mismo contenido que en la alerta" />
-                    </picture>
-                  </div>
-                </div>
+                <AlertCard message={`Los votos de identidad impugnada y del personal subordinado al Comando General Electoral serán contabilizados, pero no abiertos ni escrutados en la mesa.`} message2="Faltan sobres para el comando: Ante la falta de sobres para el Comando Electoral, deberán utilizar un sobre de voto impugnado, tachar esa leyenda y agregar a mano “Voto Comando Electoral”. El mismo deberá ser firmado por las autoridades de mesa." />
+
+                <picture className={`bg-[#F0F0F0] p-4 rounded-2xl ${isTabletOrMobile ? "w-14 h-auto" : ""}`}>
+                    <img className="h-full w-full relative" src="assets/resources/image453.png" alt="mismo contenido que en la alerta" />
+                </picture>
+
               </ExpandableItem>
               <ExpandableItem title="Voto de cantado">
                 <h2 className="font-medium text-2xl mb-8">Persona que dice claramente a quien va a votar</h2>
