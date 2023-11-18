@@ -10,7 +10,8 @@ const InvolvedPeople = () => {
 		<Navbar />
 		<header>
 			<Hero 
-				title="Personas que intervienen" 
+				title="Personas que intervienen"
+				subtitle="Cómo fiscalizar"
 				imgSrc="assets/images/hero_img_var2.png"
 			/>
 		</header>
