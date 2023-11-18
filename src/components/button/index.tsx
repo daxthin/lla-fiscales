@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { IButtonProps } from "./types";
 
 const Button: React.FC<IButtonProps> = ({
@@ -14,7 +15,7 @@ const Button: React.FC<IButtonProps> = ({
   ) : isLink ? (
     <button 
       className="bg-brand text-white text-lg font-bold shadow-lg rounded-lg p-2 hover:bg-violet-800 hover:outline hover:outline-2 hover:outline-violet-400">
-      <a href={href}>{children}</a>
+      <Link to={href}>{children}</Link>
     </button>
   ) : (
     <button
