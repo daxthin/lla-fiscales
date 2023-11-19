@@ -1,15 +1,13 @@
 import Card from "../../components/card";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
-import { paths } from "../../routes/paths";
+import { paths, pathsExternal } from "../../routes/paths";
 import "./styles.css";
 import { Hero } from "../../components/hero";
 import Button from "../../components/button";
 import AlertCard from "../../components/alert-card";
 
 const HomePage = () => {
-
-
   return (
     <main id="root">
       <Navbar />
@@ -21,7 +19,11 @@ const HomePage = () => {
           imgSrc="assets/images/hero_img.png"
         >
           <p className="font-bold text-lg text-center">Si ves alguna irregularidad no dudes en denunciar</p>
-          <Button isLink href={paths.denunciar}>Quiero denunciar</Button>
+          <div className="flex flex-row justify-center items-center">
+            <Button isLink href={paths.denunciar}>Denunciar</Button>
+            <div className="w-4"></div>
+            <Button isLink href={pathsExternal.LLA}>LibertApp</Button>
+          </div>
         </Hero>
       </header>
       <section id="important-info">
@@ -39,25 +41,24 @@ const HomePage = () => {
           {/* You need to create a Card component that takes props like imgSrc, href, title, and description */}
           <Card
             imgSrc="assets/images/Book.png"
-            href={paths.home}
+            href={pathsExternal.CEN}
             title="Código Electoral Nacional (C.E.N.)"
             description="Nuestra referencia principal sobre la cual se sacó toda la información"
           />
           <Card
             imgSrc="assets/images/checkbook.png"
-            href={paths.home}
+            href={pathsExternal.RDA}
             title="Registro de afiliaddos"
             description="Sitio para corroborar que la autoridad de mesa no esté afiliada a ningún partido político"
           />
           <Card
             imgSrc="assets/images/Study.png"
-            href={paths.home}
+            href={pathsExternal.CNE}
             title="Cámara Nacional Electoral (CNE)"
             description="Información de la Cámara Nacional Electoral con sus distintas resoluciones acordadas"
           />
         </div>
         <AlertCard message={'Cualquier variación escrita entre esta página y las referencias oficiales del Código Electoral Nacional (C.N.E)/ Cámara Nacional Electoral (C.N.E). Siempre es válidos las referencias oficiales'}/>
-
       </section>
       {/* Make sure to import and use your Footer component */}
       <Footer />
