@@ -31,7 +31,7 @@ const HomePage = () => {
             <DownloadLink 
               URL={'/assets/docs/FISCALES-LLA.pdf'}
               FILENAME="Fiscales-lla.pdf" 
-              children={"Descargar Pagina"} 
+              children={"Pagina"} 
             />
           </div>
         </Hero>
