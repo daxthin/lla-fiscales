@@ -42,17 +42,17 @@ const AfterVote = () => {
                 subtitle="A partir de las 18 hs"
               >
                 <ExpandableCardItem
-                  imgSrc="assets/resources/image532.png"
+                  imgSrc="assets/resources/FotoA01.jpg"
                   title="Clausura del acto electoral"
                   description="A las 18 hs se procederá al cierre de la votación. Este periodo puede extenderse si quedan votantes dentro del establecimiento haciendo fila para votar en la mesa. Las autoridades de seguridad cerrarán las puertas de la escuela dando por finalizado la votación."
                 />
                 <ExpandableCardItem
-                  imgSrc="assets/resources/image539.png"
+                  imgSrc="assets/resources/foto20.jpg"
                   title="Comando general electoral: cierre de mesa"
-                  description="Retirado el último elector se procede al cierre de la mesa.  Confeccionar un acta de cierre donde completará los datos solicitados y firmarán las autoridades y fiscales."
+                  description="Retirado el último elector se procede al cierre de la mesa. Confeccionar un acta de cierre donde completará los datos solicitados y firmarán las autoridades y fiscales."
                 />
                 <ExpandableCardItem
-                  imgSrc="assets/resources/image422.png"
+                  imgSrc="assets/resources/foto19.jpg"
                   title="Inicio de escrutinio"
                   description="Para dar inicio al escrutinio se debe despejar el lugar donde se realizará la apertura de la urna. Si es el cuarto oscuro se retirarán las boletas oficiales que hayan quedado sin usar. Dejando una mesa completamente libre."
                 />
@@ -62,7 +62,7 @@ const AfterVote = () => {
                   description="SOLO LAS AUTORIDADES DE MESA PUEDEN INTERVENIR EN LA APERTURA Y CONTEO. NO PUDIENDO CUALQUIER OTRA PERSONA INTERVENIR EN EL MISMO Y SOLO SERÁN OBSERVADORES. A veces es posible que las autoridades soliciten ayuda de los fiscales de mesa, pero NO ESTÁ PERMITIDO INTERVENCIÓN DE OTRAS PERSONAS."
                 />
                 <ExpandableCardItem
-                  imgSrc="assets/resources/image242.png"
+                  imgSrc="assets/resources/sobreelectoral.jpg"
                   title="Escrutinio de mesa"
                   description="Al cierre las autoridades procederán a contar la cantidad de personas que votaron de acuerdo al padrón especial del presidente de mesa. Cantidad de electores que debe coincidir con la cantidad de votantes del patrón del fiscal o planilla de votantes."
                 />
@@ -72,14 +72,9 @@ const AfterVote = () => {
                   description="Se procederá a abrir la urna (previo a retirar todas las boletas del cuarto oscuro) y se contarán los sobres que deberán coincidir con la cantidad de votantes. Estos sobres sacados de las urnas DEBEN tener la firma de presidente, auxiliar y fiscales de mesa."
                 />
                 <ExpandableCardItem
-                  imgSrc="assets/resources/image922.png"
+                  imgSrc="assets/resources/sobreelectoral.jpg"
                   title="Apertura de sobre por sobre"
-                  description="Coincidiendo lo anterior se procederá a abrir sobre por sobre, de a uno debiendo exhibir el contenido del sobre  y clasificar ese voto en positivo , nulo, blanco o recurrido."
-                />
-                <ExpandableCardItem
-                  imgSrc="assets/resources/image242.png"
-                  title="Apertura de sobre por sobre"
-                  description="Coincidiendo lo anterior se procederá a abrir sobre por sobre, de a uno debiendo exhibir el contenido del sobre  y clasificar ese voto en positivo , nulo, blanco o recurrido."
+                  description="Coincidiendo lo anterior se procederá a abrir sobre por sobre, de a uno debiendo exhibir el contenido del sobre y clasificar ese voto en positivo , nulo, blanco o recurrido."
                 />
               </ExpandableCard>
             </div>
