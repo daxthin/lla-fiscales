@@ -53,7 +53,7 @@ const BeforeVote = () => {
                 />
 
                   <DownloadLink 
-                    URL="http://localhost:5173/lla-fiscales/assets/docs/Planilla-de-control-de-votantes.pdf"
+                    URL="/assets/docs/Planilla-de-control-de-votantes.pdf"
                     FILENAME="Planilla-de-control-de-votantes.pdf" 
                     children={"Planilla CdV"} 
                   />
@@ -114,7 +114,7 @@ const BeforeVote = () => {
                 />
 
                 <DownloadLink 
-                  URL="http://localhost:5173/lla-fiscales/assets/docs/Exp-7574-2023-31-oct-2023.pdf"
+                  URL="/assets/docs/Exp-7574-2023-31-oct-2023.pdf"
                   FILENAME="Exp-7574-2023-31-oct-2023.pdf" 
                   children={"Planilla EXP"} 
                 />
