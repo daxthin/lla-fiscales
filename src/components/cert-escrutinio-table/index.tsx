@@ -15,7 +15,7 @@ function createData(
 }
 
 const rows = [
-  createData('Buenos aires', 'https://lombardimn.github.io/lla-fiscales/assets/docs/certificados-escrutinio/CE-BUENOS-ARIES.pdf'),
+  createData('Buenos aires', 'https://lombardimn.github.io/lla-fiscales/assets/docs/certificados-escrutinio/CE-BUENOS-AIRES.pdf'),
   createData('C.A.B.A', 'https://lombardimn.github.io/lla-fiscales/assets/docs/certificados-escrutinio/CE-CAPITAL-FEDERAL.pdf'),
   createData('CATAMARCA', 'https://lombardimn.github.io/lla-fiscales/assets/docs/certificados-escrutinio/CE-CATAMARCA.pdf'),
   createData('CHACO', 'https://lombardimn.github.io/lla-fiscales/assets/docs/certificados-escrutinio/CE-CHACO.pdf'),
