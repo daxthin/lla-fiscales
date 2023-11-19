@@ -17,5 +17,6 @@ export const pathsExternal = {
   LLA: 'https://libertapp.net/#',
   COL1: 'https://github.com/daxthin',
   COL2: 'https://lombardidev.ar/',
-  DES1: 'https://www.behance.net/rosinaesquivel_'
+  DES1: 'https://www.behance.net/rosinaesquivel_',
+  DESC: 'https://drive.google.com/drive/folders/0ByUN6EnxTYWFazk0NFRlSUpHbmc?resourcekey=0-cASeJT28GILyG3fbIitsDA'
 }

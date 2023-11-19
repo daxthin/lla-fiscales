@@ -6,8 +6,11 @@ import "./styles.css";
 import { Hero } from "../../components/hero";
 import Button from "../../components/button";
 import AlertCard from "../../components/alert-card";
+import { DownloadLink } from "../../components/button/buttonDownload";
+import { useMediaQuery } from "react-responsive";
 
 const HomePage = () => {
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 800px)' })
   return (
     <main id="root">
       <Navbar />
@@ -23,6 +26,13 @@ const HomePage = () => {
             <Button isLink href={paths.denunciar}>Denunciar</Button>
             <div className="w-4"></div>
             <Button isLink href={pathsExternal.LLA}>LibertApp</Button>
+          </div>
+          <div className={`${isTabletOrMobile ? "flex flex-row justify-center items-center" : "flex flex-row justify-center items-center ml-[85px]"}`}>
+            <DownloadLink 
+              URL={'/assets/docs/FISCALES-LLA.pdf'}
+              FILENAME="Fiscales-lla.pdf" 
+              children={"Descargar Pagina"} 
+            />
           </div>
         </Hero>
       </header>
