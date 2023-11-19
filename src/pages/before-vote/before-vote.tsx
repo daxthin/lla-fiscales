@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { Hero } from "../../components/hero";
 import { useMediaQuery } from "react-responsive";
 import { DownloadLink } from "../../components/button/buttonDownload";
+import AlertCard from "../../components/alert-card";
 
 const BeforeVote = () => {
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 800px)' })
@@ -46,12 +47,16 @@ const BeforeVote = () => {
                 />
 
                 <ExpandableCardItem
-                  imgSrc="assets/resources/fiscales.jpg"
+                  imgSrc="assets/resources/lapices.webp"
                   title="Herramienta Escenciales"
                   description="Llevar biromes (azul, negra y otros colores), llevar resaltador, llevar papel/cuaderno para realizar anotaciones. Llevar Planilla de Control de Votantes"
                 />
 
-                  <DownloadLink URL="http://localhost:5173/lla-fiscales/assets/docs/Planilla-de-control-de-votantes.pdf" FILENAME="Planilla-de-control-de-votantes.pdf" children={"Planilla CdV"} />
+                  <DownloadLink 
+                    URL="http://localhost:5173/lla-fiscales/assets/docs/Planilla-de-control-de-votantes.pdf"
+                    FILENAME="Planilla-de-control-de-votantes.pdf" 
+                    children={"Planilla CdV"} 
+                  />
 
                 <ExpandableCardItem
                   imgSrc="assets/resources/propaganda.png"
@@ -91,31 +96,37 @@ const BeforeVote = () => {
                 />
 
                 <ExpandableCardItem
-                  imgSrc="assets/resources/foto31.png"
+                  imgSrc="assets/resources/foto3.jpg"
                   title="Cuarto oscuro"
                   description="Preparación del cuarto oscuro"
                 />
 
                 <ExpandableCardItem
-                  imgSrc="assets/resources/foto41.png"
+                  imgSrc="assets/resources/foto4.jpg"
                   title="Habilitación"
                   description="Habilitación del cuarto oscuro"
                 />
 
                 <ExpandableCardItem
-                  imgSrc="assets/resources/foto161.png"
+                  imgSrc="assets/resources/boleta-valida.png"
                   title="Verificar que las boletas SEAN LAS OFICIALES "
-                  description="Verificar siempre que sean todas boletas oficializadas. Fecha 19 Noviembre 2023 y Fecha 22 Octubre 2023 Exp 7574-2023 31-oct-2023 link a Exp 7574-2023 31-oct-2023.pdf (autorización Justicia Nacional Electoral sobre uso de boletas)"
+                  description="Verificar siempre que sean todas boletas oficializadas. Fecha 19 Noviembre 2023 y Fecha 22 Octubre 2023 Exp 7574-2023 31-oct-2023 (autorización Justicia Nacional Electoral sobre uso de boletas)"
+                />
+
+                <DownloadLink 
+                  URL="http://localhost:5173/lla-fiscales/assets/docs/Exp-7574-2023-31-oct-2023.pdf"
+                  FILENAME="Exp-7574-2023-31-oct-2023.pdf" 
+                  children={"Planilla EXP"} 
                 />
 
                 <ExpandableCardItem
-                  imgSrc="assets/resources/foto51.png"
+                  imgSrc="assets/resources/foto5.jpg"
                   title="Cuarto oscuro accesible"
-                  description="Verificar siempre que sean todas boletas oficializadas. Fecha 19 Noviembre 2023 y Fecha 22 Octubre 2023 Exp 7574-2023 31-oct-2023 link a Exp 7574-2023 31-oct-2023.pdf (autorización Justicia Nacional Electoral sobre uso de boletas) "
+                  description="Verifica que el cuarto oscuro sea de facil acceso y todas las boletas seran accesibles predispuestas en forma de semicirculo."
                 />
 
                 <ExpandableCardItem
-                  imgSrc="assets/resources/foto61.png"
+                  imgSrc="assets/resources/foto6.jpg"
                   title="Habilitación de la urna de votación"
                   description="Habilitación de URNA. La urna deberá estar abierta y vacía a la vista de todos los fiscales. Luego se procede a cerrar la misma y colocar las fajas autoadhesivas sin dejar ninguna ranura posible para introducir o extraer sobres salvo la ranura de voto. Estas fajas deberán ser firmadas por las autoridades y fiscales. Foto6. Este proceso se hace cerca de las 8 hs. Ver Trampa URNA EMBARAZADA"
                 />
@@ -129,6 +140,12 @@ const BeforeVote = () => {
             </div>
           </div>
         </div>
+      </section>
+      <section>
+        <AlertCard message={'Recuerde revisar a detalle las boletas validadas. No deben contener la fecha de las paso correspondiente al 13 de Agosto del 2023'}/>
+          <picture className={`flex place-content-center ${isTabletOrMobile ? 'm-3': ''}`}>
+            <img src="assets/resources/boleta-valida.png" alt="detalles de las boletas validas" />
+          </picture>
       </section>
       <Footer></Footer>
     </main>
