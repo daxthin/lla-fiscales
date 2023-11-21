@@ -5,6 +5,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import { AncorDownloadLink } from '../button/ancorDowload';
 
 function createData(
   type: string,
@@ -16,8 +17,8 @@ function createData(
 
 const rows = [
   createData('Boletas oficiales', 'Optimización', 'lorem'),
-  createData('Exp 7574/2023 fecha 31/Oct/2023', 'Acta de la Junta Electoral Nacional para usar boletas con fecha 22/Oct/2023', 'lorem'),
-  createData('Planilla', 'Control de Cantidad de Votante', 'lorem'),
+  createData('Exp 7574/2023 fecha 31/Oct/2023', 'Acta de la Junta Electoral Nacional para usar boletas con fecha 22/Oct/2023', 'https://lombardimn.github.io/lla-fiscales/assets/docs/Exp-7574-2023-31-oct-2023.pdf'),
+  createData('Planilla', 'Control de Cantidad de Votante', 'https://lombardimn.github.io/lla-fiscales/assets/docs/Planilla-de-control-de-votantes.pdf'),
 ];
 
 export default function BoletasYdocTable() {
@@ -45,7 +46,7 @@ export default function BoletasYdocTable() {
             >
               <TableCell component="th" scope="row">{row.type}</TableCell>
               <TableCell>{row.name}</TableCell>
-              <TableCell><a className='text-blue-700' href={row.link}>enlace</a></TableCell>
+              <TableCell><AncorDownloadLink URL={row.link} FILENAME={`CE-${row.name}.pdf`}/></TableCell>
             </TableRow>
           ))}
         </TableBody>

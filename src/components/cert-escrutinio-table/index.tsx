@@ -5,6 +5,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import { AncorDownloadLink } from '../button/ancorDowload';
 
 function createData(
   place: string,
@@ -14,29 +15,29 @@ function createData(
 }
 
 const rows = [
-  createData('Buenos aires', 'lorem'),
-  createData('C.A.B.A', 'lorem'),
-  createData('CATAMARCA', 'lorem'),
-  createData('CHACO', 'lorem'),
-  createData('CHUBUT', 'lorem'),
-  createData('CORDOBA', 'lorem'),
-  createData('CORRIENTES', 'lorem'),
-  createData('ENTRE RÍOS', 'lorem'),
-  createData('FORMOSA', 'lorem'),
-  createData('JUJUY', 'lorem'),
-  createData('LA PAMPA', 'lorem'),
-  createData('LA RIOJA', 'lorem'),
-  createData('MISIONES', 'lorem'),
-  createData('NEUQUEN', 'lorem'),
-  createData('RIO NEGRO', 'lorem'),
-  createData('SALTA', 'lorem'),
-  createData('SAN JUAN', 'lorem'),
-  createData('SAN LUIS', 'lorem'),
-  createData('SANTA CRUZ', 'lorem'),
-  createData('SANTA FE', 'lorem'),
-  createData('SANTIAGO DEL ESTEREO', 'lorem'),
-  createData('TIERRA DEL FUEGO', 'lorem'),
-
+  createData('Buenos aires', 'https://lombardimn.github.io/lla-fiscales/assets/docs/certificados-escrutinio/CE-BUENOS-AIRES.pdf'),
+  createData('C.A.B.A', 'https://lombardimn.github.io/lla-fiscales/assets/docs/certificados-escrutinio/CE-CAPITAL-FEDERAL.pdf'),
+  createData('CATAMARCA', 'https://lombardimn.github.io/lla-fiscales/assets/docs/certificados-escrutinio/CE-CATAMARCA.pdf'),
+  createData('CHACO', 'https://lombardimn.github.io/lla-fiscales/assets/docs/certificados-escrutinio/CE-CHACO.pdf'),
+  createData('CHUBUT', 'https://lombardimn.github.io/lla-fiscales/assets/docs/certificados-escrutinio/CE-CHUBUT.pdf'),
+  createData('CORDOBA', 'https://lombardimn.github.io/lla-fiscales/assets/docs/certificados-escrutinio/CE-CORDOBA.pdf'),
+  createData('CORRIENTES', 'https://lombardimn.github.io/lla-fiscales/assets/docs/certificados-escrutinio/CE-CORRIENTES.pdf'),
+  createData('ENTRE RÍOS', 'https://lombardimn.github.io/lla-fiscales/assets/docs/certificados-escrutinio/CE-ENTRE-RIOS.pdf'),
+  createData('FORMOSA', 'https://lombardimn.github.io/lla-fiscales/assets/docs/certificados-escrutinio/CE-FORMOSA.pdf'),
+  createData('JUJUY', 'https://lombardimn.github.io/lla-fiscales/assets/docs/certificados-escrutinio/CE-JUJUY.pdf'),
+  createData('LA PAMPA', 'https://lombardimn.github.io/lla-fiscales/assets/docs/certificados-escrutinio/CE-LA-PAMPA.pdf'),
+  createData('LA RIOJA', 'https://lombardimn.github.io/lla-fiscales/assets/docs/certificados-escrutinio/CE-LA-RIOJA.pdf'),
+  createData('MISIONES', 'https://lombardimn.github.io/lla-fiscales/assets/docs/certificados-escrutinio/CE-MISIONES.pdf'),
+  createData('NEUQUEN', 'https://lombardimn.github.io/lla-fiscales/assets/docs/certificados-escrutinio/CE-NEUQUEN.pdf'),
+  createData('RIO NEGRO', 'https://lombardimn.github.io/lla-fiscales/assets/docs/certificados-escrutinio/CE-RIO-NEGRO.pdf'),
+  createData('SALTA', 'https://lombardimn.github.io/lla-fiscales/assets/docs/certificados-escrutinio/CE-SALTA.pdf'),
+  createData('SAN JUAN', 'https://lombardimn.github.io/lla-fiscales/assets/docs/certificados-escrutinio/CE-SAN-JUAN.pdf'),
+  createData('SAN LUIS', 'https://lombardimn.github.io/lla-fiscales/assets/docs/certificados-escrutinio/CE-SAN-LUIS.pdf'),
+  createData('SANTA CRUZ', 'https://lombardimn.github.io/lla-fiscales/assets/docs/certificados-escrutinio/CE-SANTA-CRUZ.pdf'),
+  createData('SANTA FE', 'https://lombardimn.github.io/lla-fiscales/assets/docs/certificados-escrutinio/CE-SANTA-FE.pdf'),
+  createData('SANTIAGO DEL ESTEREO', 'https://lombardimn.github.io/lla-fiscales/assets/docs/certificados-escrutinio/CE-SANTIAGO-DEL-ESTEREO.pdf'),
+  createData('TIERRA DEL FUEGO', 'https://lombardimn.github.io/lla-fiscales/assets/docs/certificados-escrutinio/CE-TIERRA-DEL-FUEGO.pdf'),
+  createData('TUCUMÁN', 'https://lombardimn.github.io/lla-fiscales/assets/docs/certificados-escrutinio/CE-TUCUMAN.pdf'),
 ];
 
 export default function CertEscrutinio() {
@@ -60,7 +61,7 @@ export default function CertEscrutinio() {
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell component="th" scope="row">{row.place}</TableCell>
-              <TableCell><a className='text-blue-700' href={row.link}>enlace</a></TableCell>
+              <TableCell><AncorDownloadLink URL={row.link} FILENAME={`CE-${row.place}.pdf`}/></TableCell>
             </TableRow>
           ))}
         </TableBody>
