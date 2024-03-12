@@ -29,7 +29,7 @@ const HomePage = () => {
           </div>
           <div className={`${isTabletOrMobile ? "flex flex-row justify-center items-center" : "flex flex-row justify-center items-center ml-[85px]"}`}>
             <DownloadLink 
-              URL={'/assets/docs/FISCALES-LLA.pdf'}
+              URL={'https://lombardimn.github.io/lla-fiscales/assets/docs/FISCALES-LLA.pdf'}
               FILENAME="Fiscales-lla.pdf" 
               children={"Pagina"} 
             />

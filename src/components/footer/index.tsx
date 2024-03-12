@@ -17,10 +17,10 @@ const Footer = () => {
             <section className={`flex w-full ${isTabletOrMobile ? 'h-[200px] w-full flex-col place-content-center' : " flex-row gap-4 place-content-center mb-2 justify-between"}`}>
                 <h2 className={`font-bold text-center ${isTabletOrMobile ? 'text-xl mb-3' : 'text-2xl'}`}>Fiscales La Libertad Avanza</h2>
                 <div className={`flex flex-row gap-4 ${isTabletOrMobile ? 'place-content-center' : ''}`}>
-                    <a href="">
+                    <a href="https://www.instagram.com/libertadapp/">
                         <img 
                             src="assets/images/instagram.svg" 
-                            alt=""
+                            alt="instagram"
                             className="w-10 h-10 shadow-sm rounded-full"
                         />
                     </a>
@@ -31,11 +31,11 @@ const Footer = () => {
                             className="w-10 h-10"
                         />
                     </a>
-                    <a href="">
+                    <a href="https://twitter.com/libertapp">
                         <img 
-                            src="assets/images/facebook.svg" 
-                            alt=""
-                            className="w-10 h-10"
+                            src="assets/images/square-x-twitter.svg" 
+                            alt="twitter"
+                            className="w-10 h-10 bg-white"
                         />
                 </a>
                 </div>
